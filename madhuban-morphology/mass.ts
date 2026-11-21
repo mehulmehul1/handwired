@@ -79,7 +79,7 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
   }
   const span = [hi[0]! - lo[0]!, hi[1]! - lo[1]!, hi[2]! - lo[2]!] as const
   const bodyLen = Math.max(span[0], span[1], span[2])
-  let h = opt.h ?? Math.min(0.05, Math.max(0.0025, bodyLen / 110))
+  let h = opt.h ?? Math.min(0.05, Math.max(0.001, bodyLen / 120))
   const hRequested = h
 
   // A voxel budget, because a bounding box is a poor model of a body. A spider's legs make an extent

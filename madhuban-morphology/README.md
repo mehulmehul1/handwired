@@ -68,9 +68,10 @@ is meaningful.
 ### The mass-construction body
 
 The three universal masses (cranium / ribcage / pelvis) plus a spine bridge give the torso; tapered
-round cones give the neck, the four limbs, the tail and the ears. It is roughly 33 primitives per body
-versus 96–956 in the artist's sculpt — a coarse but instantly recognisable creature. Thickness comes
-from the latent (i.e. from the real SDF), and `06-muscle.png` shows it is fully controllable.
+round cones give the neck, the four limbs, the tail and the ears. It is roughly 33–48 primitives per body
+(33 core axial/limb cones, expanding to 48 with ear, tail-tip, and paw cones) versus 96–956 in the artist's
+sculpt — a coarse but instantly recognisable creature. Thickness comes from the latent (i.e. from the real SDF),
+and `06-muscle.png` shows it is fully controllable.
 
 ---
 
@@ -179,7 +180,7 @@ doing exactly what it is: a generic quadruped estimate. The nuance lives in the 
 
 - a **real skeleton** — 10-joint trunk chain off the nose, a pitched head frame, ear landmarks, columnar
   fore/hind limbs;
-- a **127-prim sculpt** — domed cranium, sloping face, heavy cheek, small deep-set eye, lower jaw;
+- a **131-primitive sculpt** (127 additive primitives: 82 ellipsoids, 43 cones, 2 fins, plus 4 subtractive carvers) — domed cranium, sloping face, heavy cheek, small deep-set eye, lower jaw;
   a tapering **trunk** column; four **tusks** arcing forward then up; legs that are **columns, not
   cones**, ending in broad flat pads ringed with toenails; a **big fan ear** as an exact slab (`m.fin`).
 
