@@ -15,7 +15,7 @@
     "site:check": "bun scripts/check-demo-site.ts",
     "check": "bun scripts/check.ts",
     "knip": "knip",
-    "test": "bun test --timeout 30000 ./tests ./template ./lab"
+    "test": "bun test --timeout 30000 ./tests ./template ./lab ./madhuban-morphology"
   },
   "devDependencies": {
     "@chenglou/pretext": "1.0.0",

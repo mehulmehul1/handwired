@@ -173,10 +173,14 @@ Standing limits that remain:
 - **An 8-million-cell budget coarsens extreme bodies.** A spider's bounding box is enormous next to its
   limb thickness. The budget keeps the run finite and reports the step it was forced to use — but a
   budgeted body cannot be refined, so its numbers are capped by the budget, not by the geometry.
-- **The reference masses are literature values carried in memory, not cited this session.** Every
-  comparison in section 3 is therefore a hypothesis until each number is replaced with a source. They
-  are marked `firm` or `rough` in `audit.ts` to say how much weight they can carry, and none of them
-  should become a gate before it is cited.
+- **The reference masses are now fully cited in `audit.ts` (Task 2.1).** Every comparison against literature targets
+  in section 3 is now grounded in published biomechanics sources (e.g. Buchner et al. 1997, Clayton et al. 2003,
+  van der Tol et al. 2002, Hutchinson et al. 2006, Ren et al. 2008, Bertram & Biewener 1990, Lee et al. 1999,
+  Walter & Carrier 2007, Biewener 1983, Jayes & Alexander 1978, Dunning 2008 CRC Handbook, etc.).
+- **Instrument bugs M-B1 through M-B6 resolved:** The 1-voxel AABB index shift (M-B1), missing `hRequested` (M-B2),
+  inverted CoM tissue delta (M-B3), non-zero `minY` offset (M-B4), empty fore/hind centroid guard (M-B5),
+  and physics gaps (M-B6: lung density 350 kg/m³, 2nd-moment SPD inertia tensor, adaptive voxel step for small animals,
+  scale-free support area check) have been fixed and pinned under tests.
 
 ---
 

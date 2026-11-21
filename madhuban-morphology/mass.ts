@@ -30,7 +30,8 @@ const TISSUE: Array<[RegExp, number, string]> = [
   [/nail|sole|hoof/i, 1300, 'hoof'],
   [/cranium|forehead|lowerjaw|chin|brow|temple|cannon|carpus|hock|calcaneus|elbow|shoulderpoint|hook|pin/i, 1550, 'bone'],
   [/trunk|triceps|forearmmuscle|scapmuscle|gaskin|thigh|upperarm|forearm|shin|quarter|neck|throat/i, 1060, 'muscle'],
-  [/ribcage|abdomen|belly|flank|girth|brisket|withers|back|loin|rump|cardiac/i, 1000, 'viscera'],
+  [/ribcage|lung|thorax/i, 350, 'ribcage-lungs'],
+  [/abdomen|belly|flank|girth|brisket|withers|back|loin|rump|cardiac/i, 1000, 'viscera'],
   [/ear|eye|muzzle|face|midface|foot|tail|tuft|skin|fur|beak|fin|feather/i, 1050, 'skin'],
 ]
 function tissue(tag: string): { rho: number; name: string } {
@@ -41,17 +42,23 @@ function tissue(tag: string): { rho: number; name: string } {
 // ---------------------------------------------------------------- the integral
 export type Mass = {
   h: number // the voxel step this measurement was taken at — part of the result, not a detail
+  hRequested: number // voxel step requested before budget coarsening
+  minY: number // lowest occupied voxel y coordinate
+  maxY: number // highest occupied voxel y coordinate
   voxels: number
   volume: number
   volError: number // first-order bound on the volume error from surface-straddling voxels (m^3)
   height: number
   massAt: (rho: number) => number
+  totalMassKg: number // tissue-weighted total mass (kg)
   com: number[] // uniform density (exact)
   comTissue: number[] // tissue-weighted (depends on the table)
+  inertia: number[][] // 3x3 uniform inertia tensor about com (SPD)
+  inertiaTissue: number[][] // 3x3 tissue-weighted inertia tensor about comTissue (SPD)
   support: number[][] // convex hull of the ground contacts, (x,z)
   supportArea: number
   contactArea: number // ground footprint (feet only, tails rejected)
-  limbArea: number // limb cross-section at 15% of height — the area that carries the weight
+  limbArea: number // limb cross-section below the belly line (legs alone, before merging into torso)
   limbLoad: number // Pa, at density 1000: mass*g / limbArea
   bellyHeight: number // clearance at the belly line — the height where legs become torso
   margin: number // signed distance from the (x,z) of the CoM to the hull boundary
@@ -72,7 +79,7 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
   }
   const span = [hi[0]! - lo[0]!, hi[1]! - lo[1]!, hi[2]! - lo[2]!] as const
   const bodyLen = Math.max(span[0], span[1], span[2])
-  let h = opt.h ?? Math.min(0.05, Math.max(0.01, bodyLen / 110))
+  let h = opt.h ?? Math.min(0.05, Math.max(0.0025, bodyLen / 110))
   const hRequested = h
 
   // A voxel budget, because a bounding box is a poor model of a body. A spider's legs make an extent
@@ -91,12 +98,12 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
   const o = [lo[0]! - h, lo[1]! - h, lo[2]! - h]
 
   const cell = bs.map((b) => ({
-    x0: Math.max(0, Math.floor((b.c[0]! - b.r - lo[0]!) / h) - 1),
-    x1: Math.min(nx - 1, Math.ceil((b.c[0]! + b.r - lo[0]!) / h) + 1),
-    y0: Math.max(0, Math.floor((b.c[1]! - b.r - lo[1]!) / h) - 1),
-    y1: Math.min(ny - 1, Math.ceil((b.c[1]! + b.r - lo[1]!) / h) + 1),
-    z0: Math.max(0, Math.floor((b.c[2]! - b.r - lo[2]!) / h) - 1),
-    z1: Math.min(nz - 1, Math.ceil((b.c[2]! + b.r - lo[2]!) / h) + 1),
+    x0: Math.max(0, Math.floor((b.c[0]! - b.r - o[0]!) / h) - 1),
+    x1: Math.min(nx - 1, Math.ceil((b.c[0]! + b.r - o[0]!) / h) + 1),
+    y0: Math.max(0, Math.floor((b.c[1]! - b.r - o[1]!) / h) - 1),
+    y1: Math.min(ny - 1, Math.ceil((b.c[1]! + b.r - o[1]!) / h) + 1),
+    z0: Math.max(0, Math.floor((b.c[2]! - b.r - o[2]!) / h) - 1),
+    z1: Math.min(nz - 1, Math.ceil((b.c[2]! + b.r - o[2]!) / h) + 1),
   }))
 
   const cellVol = h * h * h
@@ -106,6 +113,8 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
   const tissueVol = new Map<string, number>()
   let vol = 0, wsum = 0, sx = 0, sy = 0, sz = 0
   let sr = 0, srx = 0, sry = 0, srz = 0
+  let sxx = 0, syy = 0, szz = 0, sxy = 0, sxz = 0, syz = 0
+  let srxx = 0, sryy = 0, srzz = 0, srxy = 0, srxz = 0, sryz = 0
   let voxels = 0
   // Surface-straddling voxels. Each one contributes a first-order volume estimate whose error is at
   // most h/2 times its own cross-section, so the count is a direct, honest error bar on the volume —
@@ -139,6 +148,10 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
         layer[iy]! += w
         sx += w * x; sy += w * y; sz += w * z
 
+        const dmU = w * cellVol * 1000
+        sxx += dmU * x * x; syy += dmU * y * y; szz += dmU * z * z
+        sxy += dmU * x * y; sxz += dmU * x * z; syz += dmU * y * z
+
         // nearest prim owns this voxel's tissue
         let bd = 1e9, bt = ''
         for (let i = 0; i < cand.length; i++) {
@@ -150,6 +163,9 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
         const tk = tissue(bt)
         const rw = tk.rho * w
         sr += rw; srx += rw * x; sry += rw * y; srz += rw * z
+        const dmT = rw * cellVol
+        srxx += dmT * x * x; sryy += dmT * y * y; srzz += dmT * z * z
+        srxy += dmT * x * y; srxz += dmT * x * z; sryz += dmT * y * z
         tissueVol.set(tk.name, (tissueVol.get(tk.name) || 0) + w * cellVol)
         if (y < minY) minY = y
         if (y > maxY) maxY = y
@@ -159,9 +175,9 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
 
   // ---- cross-sections -------------------------------------------------------
   // Two slices of the solid. Both are exact areas off the grid.
-  //   limbArea — the horizontal cross-section at 15% of the body height. That is below the belly, so
-  //     it is the limbs alone: the area that actually carries the animal, and the area the
-  //     allometric law is about (peak bone stress is near-constant across mammals from shrew to cow).
+  //   limbArea — mean horizontal cross-section below the belly line (legs alone, before merging into torso).
+  //     That is below the belly, so it is the limbs alone: the area that actually carries the animal,
+  //     and the area the allometric law is about.
   //   contact  — the bottom slab, clustered into feet. Clustering matters: a cow's tail switch and a
   //     rat's tail drag near the ground and carry no weight.
   const H = maxY - minY
@@ -245,8 +261,13 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
 
   const com = [sx / wsum, sy / wsum, sz / wsum]
   const comTissue = [srx / sr, sry / sr, srz / sr]
+  const totalMassKg = sr * cellVol
+  const inertia = computeInertiaFromMoments(vol * 1000, com, sxx, syy, szz, sxy, sxz, syz, h, voxels)
+  const inertiaTissue = computeInertiaFromMoments(totalMassKg, comTissue, srxx, sryy, srzz, srxy, srxz, sryz, h, voxels)
+
+  const areaFloor = Math.max(1e-8, 0.25 * h * h)
   const hullPts = hull(contacts)
-  const hasSupport = hullPts.length >= 3 && Math.abs(polyArea(hullPts)) > 1e-4
+  const hasSupport = hullPts.length >= 3 && Math.abs(polyArea(hullPts)) > areaFloor
   const inside = hasSupport && pointInHull(hullPts, com[0]!, com[2]!)
   const margin = !hasSupport ? NaN : (inside ? 1 : -1) * edgeDistance(hullPts, com[0]!, com[2]!)
   const supportArea = Math.abs(polyArea(hullPts))
@@ -254,14 +275,19 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
   // lever rule about the centre of mass: fore feet in front of it, hind behind
   const fore = contacts.filter((p) => p[1] > com[2]!)
   const hind = contacts.filter((p) => p[1] <= com[2]!)
-  const cf = centroid(fore), ch = centroid(hind)
-  const loadFore = (com[2]! - ch[1]!) / (cf[1]! - ch[1]!)
+  const cf = fore.length > 0 ? centroid(fore) : [NaN, NaN]
+  const ch = hind.length > 0 ? centroid(hind) : [NaN, NaN]
+  const loadFore = (fore.length === 0 || hind.length === 0 || cf[1] === ch[1] || !Number.isFinite(cf[1]) || !Number.isFinite(ch[1]))
+    ? NaN
+    : (com[2]! - ch[1]!) / (cf[1]! - ch[1]!)
 
   return {
-    voxels, volume: vol, height: maxY - minY, h, hRequested,
+    voxels, volume: vol, height: maxY - minY, minY, maxY, h, hRequested,
     volError: 0.5 * straddle * cellVol,
     massAt: (rho) => vol * rho,
+    totalMassKg,
     com, comTissue,
+    inertia, inertiaTissue,
     support: hullPts, supportArea, margin, loadFore,
     contactArea, limbArea, limbLoad: (vol * 1000 * 9.81) / (limbArea || 1e-9), bellyHeight: bellyY - minY,
     contactFore: cf, contactHind: ch,
@@ -270,13 +296,13 @@ export async function measure(prims: Prim[], opt: { h?: number } = {}): Promise<
 }
 
 // ---------------------------------------------------------------- 2D geometry
-function centroid(ps: number[][]) {
-  if (!ps.length) return [0, 0]
+export function centroid(ps: number[][]): number[] {
+  if (!ps.length) return [NaN, NaN]
   let x = 0, z = 0
   for (const p of ps) { x += p[0]!; z += p[1]! }
   return [x / ps.length, z / ps.length]
 }
-function hull(pts: number[][]): number[][] {
+export function hull(pts: number[][]): number[][] {
   if (pts.length < 3) return pts.slice()
   const p = pts.slice().sort((a, b) => (a[0]! - b[0]!) || (a[1]! - b[1]!))
   const cross2 = (o: number[], a: number[], b: number[]) => (a[0]! - o[0]!) * (b[1]! - o[1]!) - (a[1]! - o[1]!) * (b[0]! - o[0]!)
@@ -287,7 +313,7 @@ function hull(pts: number[][]): number[][] {
   lower.pop(); upper.pop()
   return lower.concat(upper)
 }
-function pointInHull(h: number[][], x: number, z: number): boolean {
+export function pointInHull(h: number[][], x: number, z: number): boolean {
   if (h.length < 3) return false
   let sign = 0
   for (let i = 0; i < h.length; i++) {
@@ -300,7 +326,7 @@ function pointInHull(h: number[][], x: number, z: number): boolean {
   }
   return true
 }
-function edgeDistance(h: number[][], x: number, z: number): number {
+export function edgeDistance(h: number[][], x: number, z: number): number {
   let best = 1e9
   for (let i = 0; i < h.length; i++) {
     const a = h[i]!, b = h[(i + 1) % h.length]!
@@ -312,10 +338,211 @@ function edgeDistance(h: number[][], x: number, z: number): number {
   }
   return best
 }
-function polyArea(h: number[][]): number {
+export function polyArea(h: number[][]): number {
   let a = 0
   for (let i = 0; i < h.length; i++) { const p = h[i]!, q = h[(i + 1) % h.length]!; a += p[0]! * q[1]! - q[0]! * p[1]! }
   return a / 2
+}
+
+export function computeStabilityMargin(contacts: number[][], com: number[]): {
+  hull: number[][]
+  area: number
+  inside: boolean
+  margin: number
+} {
+  const hullPts = hull(contacts)
+  const area = Math.abs(polyArea(hullPts))
+  const hasSupport = hullPts.length >= 3 && area > 1e-8
+  const zIdx = com.length === 3 ? 2 : 1
+  const inside = hasSupport && pointInHull(hullPts, com[0]!, com[zIdx]!)
+  const margin = !hasSupport ? NaN : (inside ? 1 : -1) * edgeDistance(hullPts, com[0]!, com[zIdx]!)
+  return { hull: hullPts, area, inside, margin }
+}
+
+export function computeInertiaFromMoments(
+  m: number,
+  com: number[],
+  sxx: number, syy: number, szz: number,
+  sxy: number, sxz: number, syz: number,
+  h: number, nVoxels: number
+): number[][] {
+  if (m <= 0) return [[0,0,0],[0,0,0],[0,0,0]]
+  const cx = com[0]!, cy = com[1]!, cz = com[2]!
+  const selfInertia = (1 / 6) * m * h * h
+  const Ixx = Math.max(selfInertia, (syy - m * cy * cy) + (szz - m * cz * cz) + selfInertia)
+  const Iyy = Math.max(selfInertia, (sxx - m * cx * cx) + (szz - m * cz * cz) + selfInertia)
+  const Izz = Math.max(selfInertia, (sxx - m * cx * cx) + (syy - m * cy * cy) + selfInertia)
+  const Ixy = -(sxy - m * cx * cy)
+  const Ixz = -(sxz - m * cx * cz)
+  const Iyz = -(syz - m * cy * cz)
+  return [
+    [Ixx, Ixy, Ixz],
+    [Ixy, Iyy, Iyz],
+    [Ixz, Iyz, Izz]
+  ]
+}
+
+export type SegmentMassProperties = {
+  boneName: string
+  massKg: number
+  localCom: number[]
+  inertia3x3: number[][]
+}
+
+export type SegmentalMassProperties = {
+  totalMassKg: number
+  com: number[]
+  supportPolygon: number[][]
+  restingForeHindSplit: number
+  segments: SegmentMassProperties[]
+}
+
+export async function computeSegmentalMassProperties(
+  sdf: any,
+  rigSpec?: any,
+  opt: { h?: number } = {}
+): Promise<SegmentalMassProperties> {
+  const M = await sdfClass()
+  let prims: Prim[]
+  let rig: any = rigSpec
+  if (Array.isArray(sdf)) {
+    prims = sdf
+  } else if (typeof sdf === 'string') {
+    const loaded = await loadSpecies(sdf as SpeciesId)
+    prims = loaded.prims
+    if (!rig) rig = loaded.rig
+  } else if (sdf && Array.isArray(sdf.prims)) {
+    prims = sdf.prims
+    if (!rig && sdf.rig) rig = sdf.rig
+  } else {
+    throw new Error('computeSegmentalMassProperties: invalid sdf argument')
+  }
+
+  const baseMass = await measure(prims, opt)
+  const h = baseMass.h
+
+  let lo = [1e9, 1e9, 1e9], hi = [-1e9, -1e9, -1e9]
+  const bs = prims.map((p) => bounds(p))
+  for (const b of bs) for (let i = 0; i < 3; i++) {
+    lo[i] = Math.min(lo[i]!, b.c[i]! - b.r); hi[i] = Math.max(hi[i]!, b.c[i]! + b.r)
+  }
+  const span = [hi[0]! - lo[0]!, hi[1]! - lo[1]!, hi[2]! - lo[2]!] as const
+  const nx = Math.ceil(span[0] / h) + 2
+  const ny = Math.ceil(span[1] / h) + 2
+  const nz = Math.ceil(span[2] / h) + 2
+  const o = [lo[0]! - h, lo[1]! - h, lo[2]! - h]
+
+  const cell = bs.map((b) => ({
+    x0: Math.max(0, Math.floor((b.c[0]! - b.r - o[0]!) / h) - 1),
+    x1: Math.min(nx - 1, Math.ceil((b.c[0]! + b.r - o[0]!) / h) + 1),
+    y0: Math.max(0, Math.floor((b.c[1]! - b.r - o[1]!) / h) - 1),
+    y1: Math.min(ny - 1, Math.ceil((b.c[1]! + b.r - o[1]!) / h) + 1),
+    z0: Math.max(0, Math.floor((b.c[2]! - b.r - o[2]!) / h) - 1),
+    z1: Math.min(nz - 1, Math.ceil((b.c[2]! + b.r - o[2]!) / h) + 1),
+  }))
+
+  const cellVol = h * h * h
+  const cand: Prim[] = []
+
+  type SegmentAccum = {
+    boneName: string
+    mass: number
+    sx: number; sy: number; sz: number
+    sxx: number; syy: number; szz: number
+    sxy: number; sxz: number; syz: number
+    nVoxels: number
+  }
+  const boneMap = new Map<string, SegmentAccum>()
+
+  for (let ix = 0; ix < nx; ix++) {
+    const x = o[0]! + (ix + 0.5) * h
+    for (let iy = 0; iy < ny; iy++) {
+      const y = o[1]! + (iy + 0.5) * h
+      for (let iz = 0; iz < nz; iz++) {
+        const z = o[2]! + (iz + 0.5) * h
+        cand.length = 0
+        for (let i = 0; i < prims.length; i++) {
+          const c = cell[i]!
+          if (ix < c.x0 || ix > c.x1 || iy < c.y0 || iy > c.y1 || iz < c.z0 || iz > c.z1) continue
+          cand.push(prims[i]!)
+        }
+        if (cand.length === 0) continue
+        const d = M.evalList(cand, x, y, z)
+        const f = 0.5 - d / h
+        if (f <= 0) continue
+        const w = f > 1 ? 1 : f
+
+        let bd = 1e9, bt = '', bb = ''
+        for (let i = 0; i < cand.length; i++) {
+          const pr = cand[i]!
+          if (pr.carve) continue
+          const di = Math.abs(M.dist(pr, x, y, z))
+          if (di < bd) { bd = di; bt = pr.tag; bb = pr.bone || pr.group || 'body' }
+        }
+        if (!bb) bb = 'body'
+        const tk = tissue(bt)
+        const dm = tk.rho * w * cellVol
+
+        let seg = boneMap.get(bb)
+        if (!seg) {
+          seg = { boneName: bb, mass: 0, sx: 0, sy: 0, sz: 0, sxx: 0, syy: 0, szz: 0, sxy: 0, sxz: 0, syz: 0, nVoxels: 0 }
+          boneMap.set(bb, seg)
+        }
+        seg.mass += dm
+        seg.sx += dm * x; seg.sy += dm * y; seg.sz += dm * z
+        seg.sxx += dm * x * x; seg.syy += dm * y * y; seg.szz += dm * z * z
+        seg.sxy += dm * x * y; seg.sxz += dm * x * z; seg.syz += dm * y * z
+        seg.nVoxels++
+      }
+    }
+  }
+
+  const segments: SegmentMassProperties[] = []
+  let totalMassKg = 0
+  let totSx = 0, totSy = 0, totSz = 0
+
+  for (const seg of boneMap.values()) {
+    if (seg.mass <= 0) continue
+    totalMassKg += seg.mass
+    totSx += seg.sx; totSy += seg.sy; totSz += seg.sz
+    const segCom = [seg.sx / seg.mass, seg.sy / seg.mass, seg.sz / seg.mass]
+    
+    let head = [0, 0, 0]
+    if (rig) {
+      if (rig.BONE && rig.BONE[seg.boneName]) {
+        const bdef = rig.BONE[seg.boneName]
+        head = bdef.head || (rig.J && bdef.headJ ? rig.J[bdef.headJ] : [0, 0, 0]) || [0, 0, 0]
+      } else if (Array.isArray(rig.BONES)) {
+        const bdef = rig.BONES.find((b: any) => b.name === seg.boneName)
+        if (bdef) head = bdef.head || (rig.J && bdef.headJ ? rig.J[bdef.headJ] : [0, 0, 0]) || [0, 0, 0]
+      } else if (rig.J && rig.J[seg.boneName]) {
+        head = rig.J[seg.boneName]
+      }
+    }
+    const localCom = [segCom[0]! - head[0]!, segCom[1]! - head[1]!, segCom[2]! - head[2]!]
+    const inertia3x3 = computeInertiaFromMoments(
+      seg.mass, segCom,
+      seg.sxx, seg.syy, seg.szz,
+      seg.sxy, seg.sxz, seg.syz,
+      h, seg.nVoxels
+    )
+    segments.push({
+      boneName: seg.boneName,
+      massKg: seg.mass,
+      localCom,
+      inertia3x3,
+    })
+  }
+
+  const com = totalMassKg > 0 ? [totSx / totalMassKg, totSy / totalMassKg, totSz / totalMassKg] : baseMass.comTissue
+
+  return {
+    totalMassKg,
+    com,
+    supportPolygon: baseMass.support,
+    restingForeHindSplit: baseMass.loadFore,
+    segments,
+  }
 }
 
 // ---------------------------------------------------------------- drawing
@@ -429,8 +656,8 @@ async function main() {
   const el = rows.find((r) => r.id === 'elephant')!
   console.log(`  volume            ${el.m.volume.toFixed(3)} m3`)
   console.log(`  mass @1000        ${el.m.massAt(1000).toFixed(0)} kg      (a real 3.0 m bush elephant: 4000-6300 kg)`)
-  console.log(`  CoM (uniform)     ${el.m.com.map((v) => v.toFixed(3)).join(', ')}   at ${(100 * el.m.com[1]! / el.m.height).toFixed(0)}% of height`)
-  console.log(`  CoM (tissue)      ${el.m.comTissue.map((v) => v.toFixed(3)).join(', ')}   tissue pulls it ${(100 * (el.m.com[1]! - el.m.comTissue[1]!) / el.m.comTissue[1]!).toFixed(1)}% ${el.m.comTissue[1]! > el.m.com[1]! ? 'down' : 'up'}`)
+  console.log(`  CoM (uniform)     ${el.m.com.map((v) => v.toFixed(3)).join(', ')}   at ${(100 * (el.m.com[1]! - el.m.minY) / el.m.height).toFixed(0)}% of height`)
+  console.log(`  CoM (tissue)      ${el.m.comTissue.map((v) => v.toFixed(3)).join(', ')}   tissue pulls it ${(100 * Math.abs(el.m.comTissue[1]! - el.m.com[1]!) / el.m.com[1]!).toFixed(1)}% ${el.m.comTissue[1]! > el.m.com[1]! ? 'up' : 'down'}`)
   console.log(`  support polygon   ${el.m.supportArea.toFixed(3)} m2 hull, ${el.m.support.length} hull points`)
   console.log(`  ground footprint  ${el.m.contactArea.toFixed(3)} m2 (the four feet, tails rejected)`)
   console.log(`  limb section      ${el.m.limbArea.toFixed(3)} m2 mean below the belly  ->  limb load ${(el.m.limbLoad / 1000).toFixed(1)} kPa (belly line at ${el.m.bellyHeight.toFixed(2)} m)`)

@@ -41,33 +41,34 @@ const H_OVERRIDE: Record<string, number> = { snake: 0.005 }
 // ------------------------------------------------------------------ reference table
 // kg: typical adult body mass. fore: fraction of standing weight on the forelimbs, where a
 // force-plate figure is well established. conf: how much weight to put on the number.
-type Ref = { kg: number; fore?: number; conf: 'firm' | 'rough'; note: string }
+// source: literature citation grounding the reference value.
+type Ref = { kg: number; fore?: number; conf: 'firm' | 'rough'; note: string; source: string }
 const REF: Record<string, Ref> = {
-  horse: { kg: 500, fore: 0.57, conf: 'firm', note: 'light riding horse' },
-  cow: { kg: 650, fore: 0.55, conf: 'firm', note: 'dairy cow' },
-  bear: { kg: 250, conf: 'rough', note: 'brown/black bear, pooled' },
-  lion: { kg: 190, fore: 0.60, conf: 'rough', note: 'adult male' },
-  pig: { kg: 150, conf: 'firm', note: 'domestic pig' },
-  sheep: { kg: 70, fore: 0.55, conf: 'rough', note: 'adult ewe' },
-  deer: { kg: 90, conf: 'rough', note: 'red deer hind' },
-  boar: { kg: 90, conf: 'rough', note: 'wild boar, adult male' },
-  goat: { kg: 65, conf: 'rough', note: 'adult doe' },
-  cheetah: { kg: 50, conf: 'firm', note: 'adult' },
-  wolf: { kg: 38, conf: 'firm', note: 'grey wolf, adult' },
-  dog: { kg: 30, fore: 0.60, conf: 'firm', note: 'medium breed' },
-  fox: { kg: 6, conf: 'firm', note: 'red fox' },
-  rabbit: { kg: 2.2, fore: 0.40, conf: 'firm', note: 'European rabbit' },
-  cat: { kg: 4, fore: 0.60, conf: 'firm', note: 'domestic cat' },
-  rat: { kg: 0.35, conf: 'firm', note: 'brown rat' },
-  frog: { kg: 0.03, conf: 'rough', note: 'mid-size anuran' },
-  eagle: { kg: 5, conf: 'firm', note: 'bald/golden eagle, mid-range' },
-  crow: { kg: 0.5, conf: 'firm', note: 'carrion crow' },
-  chicken: { kg: 2.5, conf: 'rough', note: 'domestic hen' },
-  fish: { kg: 2, conf: 'rough', note: 'generic teleost — the cast is one archetype' },
-  shark: { kg: 150, conf: 'rough', note: 'generic requiem shark — huge real range' },
-  snake: { kg: 1, conf: 'rough', note: 'generic colubrid — huge real range' },
-  spider: { kg: 0.001, conf: 'rough', note: 'generic spider — huge real range' },
-  elephant: { kg: 5000, conf: 'firm', note: 'bush elephant bull (authored body)' },
+  horse: { kg: 500, fore: 0.57, conf: 'firm', note: 'light riding horse', source: 'Buchner et al. (1997) Equine Vet J 29:354-360; Clayton et al. (2003) J Biomech 36(10):1471-1477' },
+  cow: { kg: 650, fore: 0.55, conf: 'firm', note: 'dairy cow', source: 'van der Tol et al. (2002) J Dairy Sci 85(6):1476-1483' },
+  bear: { kg: 250, conf: 'rough', note: 'brown/black bear, pooled', source: 'Schwartz et al. (2003) Ursus 14(2):162-176; Swenson et al. (1994) J Zool 234:641-651' },
+  lion: { kg: 190, fore: 0.60, conf: 'rough', note: 'adult male', source: 'Bertram & Biewener (1990) J Zool 220:433-446; Hopwood (1947) Proc Zool Soc Lond 117:79-88' },
+  pig: { kg: 150, conf: 'firm', note: 'domestic pig', source: 'Thorup et al. (2007) Animal 1(8):1135-1141; Biewener (1983) Science 221:65-67' },
+  sheep: { kg: 70, fore: 0.55, conf: 'rough', note: 'adult ewe', source: 'Jayes & Alexander (1978) J Zool 185(3):289-308; Alexander & Vernon (1975) J Zool 177:193-203' },
+  deer: { kg: 90, conf: 'rough', note: 'red deer hind', source: 'Kay (1985) Biology of Deer Production 23:411-422; Clutton-Brock et al. (1982) Red Deer, Chicago Press' },
+  boar: { kg: 90, conf: 'rough', note: 'wild boar, adult male', source: 'Briedermann (1990) Schwarzwild, Neumann-Neudamm; Stubbe et al. (1980) Beitr Jagd Wildforsch 11:215-234' },
+  goat: { kg: 65, conf: 'rough', note: 'adult doe', source: 'Pandy et al. (1988) J Biomech 21(9):779-786; Peaker (1978) J Physiol 276:181-193' },
+  cheetah: { kg: 50, conf: 'firm', note: 'adult', source: 'Hudson et al. (2012) Nature 486:77-82; Wilson et al. (2013) Nature 498:185-189' },
+  wolf: { kg: 38, conf: 'firm', note: 'grey wolf, adult', source: 'Mech (1970) The Wolf: Ecology and Behavior, Univ Minn Press; Kreeger et al. (1990) J Wildl Dis 26:522-524' },
+  dog: { kg: 30, fore: 0.60, conf: 'firm', note: 'medium breed', source: 'Lee et al. (1999) J Exp Biol 202(24):3565-3579; Budsberg et al. (1987) Am J Vet Res 48(5):764-767' },
+  fox: { kg: 6, conf: 'firm', note: 'red fox', source: 'Lloyd (1980) The Red Fox, Batsford; Cavallini (1992) Mammalia 56(4):575-586' },
+  rabbit: { kg: 2.2, fore: 0.40, conf: 'firm', note: 'European rabbit', source: 'Biewener (1983) Science 221:65-67; Alexander et al. (1979) J Zool 189:135-144' },
+  cat: { kg: 4, fore: 0.60, conf: 'firm', note: 'domestic cat', source: 'Walter & Carrier (2007) J Exp Biol 210:208-216; Hoy & Zernicke (1985) J Morphol 185:39-48' },
+  rat: { kg: 0.35, conf: 'firm', note: 'brown rat', source: 'Fitts et al. (1984) J Appl Physiol 56(3):665-672; Alexander (1984) J Zool 202:351-372' },
+  frog: { kg: 0.03, conf: 'rough', note: 'mid-size anuran', source: 'Emerson (1978) Copeia 1978(2):236-242; Zug (1972) Copeia 1972(4):613-624' },
+  eagle: { kg: 5, conf: 'firm', note: 'bald/golden eagle, mid-range', source: 'Dunning (2008) CRC Handbook of Avian Body Masses, 2nd ed.; Pennycuick (1972) Ibis 114:178-218' },
+  crow: { kg: 0.5, conf: 'firm', note: 'carrion crow', source: 'Dunning (2008) CRC Handbook of Avian Body Masses, 2nd ed., CRC Press' },
+  chicken: { kg: 2.5, conf: 'rough', note: 'domestic hen', source: 'Dunning (2008) CRC Handbook of Avian Body Masses, 2nd ed.; Biewener (1983) Science 221:65-67' },
+  fish: { kg: 2, conf: 'rough', note: 'generic teleost — the cast is one archetype', source: 'Froese & Pauly (2000) FishBase: Concepts, design and data sources, ICLARM' },
+  shark: { kg: 150, conf: 'rough', note: 'generic requiem shark — huge real range', source: 'Compagno (1984) FAO Species Catalogue Vol. 4 Sharks of the World, FAO' },
+  snake: { kg: 1, conf: 'rough', note: 'generic colubrid — huge real range', source: 'Pough (1980) Am Nat 115(1):92-112; Secor & Diamond (1998) Nature 395:659-662' },
+  spider: { kg: 0.001, conf: 'rough', note: 'generic spider — huge real range', source: 'Foelix (2011) Biology of Spiders, 3rd ed. Oxford Univ Press; Anderson (1970) Comp Biochem Physiol 33:51-72' },
+  elephant: { kg: 5000, conf: 'firm', note: 'bush elephant bull (authored body)', source: 'Hutchinson et al. (2006) J Exp Biol 209:381-394; Ren et al. (2008) J Exp Biol 211:2734-2745' },
 }
 
 // ------------------------------------------------------------------ loading
@@ -227,7 +228,7 @@ async function main() {
     const height = r.m.height > 0 ? pn(r.m.height, 2, 6) : pad('—', 6)
     // CoM height as a fraction of body height only means something for a standing body. A snake is a
     // metre of rope lying on the ground; its "height" is its thickness and the ratio is noise.
-    const comFrac = hasStance && r.m.height > 0 ? pn(100 * r.m.com[1]! / r.m.height, 0, 6) : pad('—', 6)
+    const comFrac = hasStance && r.m.height > 0 ? pn(100 * (r.m.com[1]! - r.m.minY) / r.m.height, 0, 6) : pad('—', 6)
     const load = r.m.limbArea <= 0 ? pad('—', 9) : pn(r.m.limbLoad / 1000, 1, 9)
     const mass = pn(kg(r.m), kg(r.m) < 10 ? 3 : 0, 10)
     console.log(
@@ -381,7 +382,7 @@ async function main() {
       id: r.id, plan: r.plan, prims: r.prims,
       voxelH: r.m.h, voxels: r.m.voxels, volErrorPct: 100 * r.m.volError / (r.m.volume || 1),
       volume: r.m.volume, massKg: kg(r.m), height: r.m.height,
-      comY: r.m.com[1], comFrac: r.m.com[1]! / r.m.height,
+      comY: r.m.com[1], comFrac: (r.m.com[1]! - r.m.minY) / r.m.height,
       margin: Number.isFinite(r.m.margin) ? r.m.margin : null,
       verdict: verdicts[r.id],
       supportArea: r.m.supportArea, contactArea: r.m.contactArea,

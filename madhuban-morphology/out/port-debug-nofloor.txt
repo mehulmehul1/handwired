@@ -1,0 +1,885 @@
+﻿prim   0 ell  P=[0.000, 2.440, 0.100, 1.000, 0.000, 0.000, 0.000, 0.999, -0.050, 0.000, 0.050, 0.999, 0.640, 0.740, 0.940]
+    ops 497  depth 63  worst 2.24e-5 at (0.00, 2.44, 0.10)
+    handwired -8.5062e-1  f32 -8.5061e-1  f64 -8.5060e-1  f64@f32coords -8.5061e-1
+    err: total 2.24e-5  |  port arithmetic 1.04e-5  |  input quantisation 1.20e-5  |  f32 reference 1.20e-5
+    taps: arg0=1.149201807e-6  k0=1.072008279e-3  arg1=1.584875235e-6  invK1=7.943328247e+2  rmin=6.399999857e-1
+    f64 ell: arg0=1.149408825e-6 k0=1.072104857e-3  arg1=1.585243539e-6 k1=1.259064549e-3 invK1=7.942404547e+2 main=-8.505961423e-1
+    port f64-relative error: arg0 -1.80e-4  k0 -9.01e-5  arg1 -2.32e-4  invK1 1.16e-4
+prim   1 ell  P=[0.000, 2.360, 0.600, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.540, 0.540, 0.420]
+    ops 501  depth 63  worst 3.14e-5 at (-0.00, 2.36, 0.60)
+    handwired -4.7774e-1  f32 -4.7776e-1  f64 -4.7777e-1  f64@f32coords -4.7776e-1
+    err: total 3.14e-5  |  port arithmetic 1.62e-5  |  input quantisation 1.51e-5  |  f32 reference 1.51e-5
+    taps: arg0=1.198883979e-6  k0=1.094935578e-3  arg1=5.241289728e-6  invK1=4.367983093e+2  rmin=4.199999869e-1
+    f64 ell: arg0=1.199251979e-6 k0=1.095103638e-3  arg1=5.242207470e-6 k1=2.289586747e-3 invK1=4.367600404e+2 main=-4.777737240e-1
+    port f64-relative error: arg0 -3.07e-4  k0 -1.53e-4  arg1 -1.75e-4  invK1 8.76e-5
+prim   2 ell  P=[0.000, 2.000, 0.700, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.340, 0.400, 0.380]
+    ops 509  depth 63  worst 9.51e-6 at (0.00, 2.00, 0.70)
+    handwired -3.6314e-1  f32 -3.6314e-1  f64 -3.6313e-1  f64@f32coords -3.6314e-1
+    err: total 9.51e-6  |  port arithmetic 3.23e-7  |  input quantisation 9.83e-6  |  f32 reference 9.81e-6
+    taps: arg0=1.183993049e-6  k0=1.088114455e-3  arg1=8.959008483e-6  invK1=3.340950623e+2  rmin=3.400000036e-1
+    f64 ell: arg0=1.183618742e-6 k0=1.087942435e-3  arg1=8.956647895e-6 k1=2.992765927e-3 invK1=3.341390621e+2 main=-3.631285716e-1
+    port f64-relative error: arg0 3.16e-4  k0 1.58e-4  arg1 2.64e-4  invK1 -1.32e-4
+prim   3 ell  P=[0.000, 2.360, -0.550, -1.000, 0.000, 0.000, 0.000, 0.998, 0.060, 0.000, 0.060, -0.998, 0.620, 0.680, 0.840]
+    ops 505  depth 63  worst 3.56e-5 at (-0.00, 2.36, -0.55)
+    handwired -7.6023e-1  f32 -7.6024e-1  f64 -7.6026e-1  f64@f32coords -7.6024e-1
+    err: total 3.56e-5  |  port arithmetic 1.85e-5  |  input quantisation 1.71e-5  |  f32 reference 1.71e-5
+    taps: arg0=1.166963102e-6  k0=1.080260612e-3  arg1=2.014809070e-6  invK1=7.045032959e+2  rmin=6.200000048e-1
+    f64 ell: arg0=1.166571409e-6 k0=1.080079353e-3  arg1=2.013945208e-6 k1=1.419135373e-3 invK1=7.046544106e+2 main=-7.602606502e-1
+    port f64-relative error: arg0 3.36e-4  k0 1.68e-4  arg1 4.29e-4  invK1 -2.14e-4
+prim   4 ell  P=[0.000, 2.000, -0.300, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.540, 0.460, 0.760]
+    ops 513  depth 63  worst 4.64e-5 at (0.00, 2.00, -0.30)
+    handwired -5.9286e-1  f32 -5.9287e-1  f64 -5.9282e-1  f64@f32coords -5.9287e-1
+    err: total 4.64e-5  |  port arithmetic 2.57e-6  |  input quantisation 4.90e-5  |  f32 reference 4.90e-5
+    taps: arg0=1.308703531e-6  k0=1.143985777e-3  arg1=3.714817694e-6  invK1=5.188373413e+2  rmin=4.600000083e-1
+    f64 ell: arg0=1.309089278e-6 k0=1.144154394e-3  arg1=3.716494505e-6 k1=1.927821181e-3 invK1=5.187203098e+2 main=-5.928170706e-1
+    port f64-relative error: arg0 -2.95e-4  k0 -1.47e-4  arg1 -4.51e-4  invK1 2.26e-4
+prim   5 ell  P=[0.000, 2.440, -0.950, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.540, 0.560, 0.440]
+    ops 509  depth 63  worst 1.68e-5 at (0.00, 2.44, -0.95)
+    handwired -4.7681e-1  f32 -4.7681e-1  f64 -4.7680e-1  f64@f32coords -4.7681e-1
+    err: total 1.68e-5  |  port arithmetic 6.00e-6  |  input quantisation 1.08e-5  |  f32 reference 1.08e-5
+    taps: arg0=1.313773851e-6  k0=1.146199647e-3  arg1=5.765346032e-6  invK1=4.164734497e+2  rmin=4.399999976e-1
+    f64 ell: arg0=1.313602475e-6 k0=1.146124982e-3  arg1=5.765001374e-6 k1=2.401041727e-3 invK1=4.164858898e+2 main=-4.767977862e-1
+    port f64-relative error: arg0 1.30e-4  k0 6.51e-5  arg1 5.98e-5  invK1 -2.99e-5
+prim   6 ell  P=[0.000, 2.580, -1.300, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.500, 0.540, 0.460]
+    ops 509  depth 63  worst 2.02e-5 at (0.00, 2.58, -1.30)
+    handwired -5.1422e-1  f32 -5.1423e-1  f64 -5.1424e-1  f64@f32coords -5.1423e-1
+    err: total 2.02e-5  |  port arithmetic 1.18e-5  |  input quantisation 8.36e-6  |  f32 reference 8.35e-6
+    taps: arg0=1.079187086e-6  k0=1.038839342e-3  arg1=4.072806405e-6  invK1=4.955108032e+2  rmin=4.600000083e-1
+    f64 ell: arg0=1.079571316e-6 k0=1.039024213e-3  arg1=4.073935006e-6 k1=2.018399119e-3 invK1=4.954421503e+2 main=-5.142415254e-1
+    port f64-relative error: arg0 -3.56e-4  k0 -1.78e-4  arg1 -2.77e-4  invK1 1.39e-4
+prim   7 ell  P=[0.000, 2.980, 0.440, 1.000, 0.000, 0.000, 0.000, 0.995, 0.100, 0.000, -0.100, 0.995, 0.340, 0.180, 0.500]
+    ops 553  depth 63  worst 3.15e-4 at (-0.00, 2.98, 0.44)
+    handwired -3.9107e-1  f32 -3.9112e-1  f64 -3.9139e-1  f64@f32coords -3.9112e-1
+    err: total 3.15e-4  |  port arithmetic 4.58e-5  |  input quantisation 2.69e-4  |  f32 reference 2.69e-4  <-- WRONG
+    taps: arg0=1.089416628e-6  k0=1.043751254e-3  arg1=7.108497812e-6  invK1=3.750689087e+2  rmin=1.800000072e-1
+    f64 ell: arg0=1.088967763e-6 k0=1.043536182e-3  arg1=7.094132307e-6 k1=2.663481238e-3 invK1=3.754484866e+2 main=-3.913852288e-1
+    port f64-relative error: arg0 4.12e-4  k0 2.06e-4  arg1 2.02e-3  invK1 -1.01e-3
+prim   8 ell  P=[0.000, 2.760, -0.100, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.380, 0.210, 0.520]
+    ops 541  depth 63  worst 1.74e-4 at (0.00, 2.76, -0.10)
+    handwired -4.1706e-1  f32 -4.1704e-1  f64 -4.1723e-1  f64@f32coords -4.1704e-1
+    err: total 1.74e-4  |  port arithmetic 1.66e-5  |  input quantisation 1.90e-4  |  f32 reference 1.90e-4  <-- WRONG
+    taps: arg0=1.126899519e-6  k0=1.061555115e-3  arg1=6.465033039e-6  invK1=3.932915649e+2  rmin=2.099999934e-1
+    f64 ell: arg0=1.126576584e-6 k0=1.061403120e-3  arg1=6.457799652e-6 k1=2.541220111e-3 invK1=3.935117606e+2 main=-4.172312895e-1
+    port f64-relative error: arg0 2.87e-4  k0 1.43e-4  arg1 1.12e-3  invK1 -5.60e-4
+prim   9 ell  P=[0.000, 2.840, -0.900, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.440, 0.210, 0.360]
+    ops 537  depth 63  worst 2.03e-4 at (0.00, 2.84, -0.90)
+    handwired -3.6906e-1  f32 -3.6897e-1  f64 -3.6886e-1  f64@f32coords -3.6897e-1
+    err: total 2.03e-4  |  port arithmetic 9.30e-5  |  input quantisation 1.10e-4  |  f32 reference 1.10e-4  <-- WRONG
+    taps: arg0=1.152319214e-6  k0=1.073461259e-3  arg1=8.441826139e-6  invK1=3.441769714e+2  rmin=2.099999934e-1
+    f64 ell: arg0=1.152914546e-6 k0=1.073738584e-3  arg1=8.455471146e-6 k1=2.907829284e-3 invK1=3.438991434e+2 main=-3.688612928e-1
+    port f64-relative error: arg0 -5.16e-4  k0 -2.58e-4  arg1 -1.61e-3  invK1 8.08e-4
+prim  10 ell  P=[0.480, 2.880, -1.140, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.190, 0.190, 0.190]
+    ops 497  depth 63  worst 2.48e-7 at (0.45, 2.63, -1.24)
+    handwired 7.6960e-2  f32 7.6960e-2  f64 7.6960e-2  f64@f32coords 7.6960e-2
+    err: total 2.48e-7  |  port arithmetic 1.33e-7  |  input quantisation 1.15e-7  |  f32 reference 1.14e-7
+    taps: arg0=1.974177480e+0  k0=1.405054331e+0  arg1=5.468635178e+1  invK1=1.352261007e-1  rmin=1.899999976e-1
+    f64 ell: arg0=1.974174045e+0 k0=1.405053040e+0  arg1=5.468626164e+1 k1=7.395016000e+0 invK1=1.352262118e-1 main=7.696007760e-2
+    port f64-relative error: arg0 1.74e-6  k0 9.19e-7  arg1 1.65e-6  invK1 -8.22e-7
+prim  11 ell  P=[0.220, 2.800, -1.580, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.160, 0.160, 0.160]
+    ops 497  depth 63  worst 2.15e-7 at (0.22, 2.81, -1.57)
+    handwired -1.4400e-1  f32 -1.4400e-1  f64 -1.4400e-1  f64@f32coords -1.4400e-1
+    err: total 2.15e-7  |  port arithmetic 9.18e-8  |  input quantisation 1.23e-7  |  f32 reference 1.25e-7
+    taps: arg0=1.000023540e-2  k0=1.000011712e-1  arg1=3.906342387e-1  invK1=1.599981070e+0  rmin=1.599999964e-1
+    f64 ell: arg0=1.000000000e-2 k0=1.000000000e-1  arg1=3.906250000e-1 k1=6.250000000e-1 invK1=1.600000000e+0 main=-1.440000000e-1
+    port f64-relative error: arg0 2.35e-5  k0 1.17e-5  arg1 2.37e-5  invK1 -1.18e-5
+prim  12 ell  P=[0.360, 2.460, -1.340, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.260, 0.440, 0.340]
+    ops 525  depth 63  worst 3.66e-5 at (0.36, 2.46, -1.34)
+    handwired -3.4357e-1  f32 -3.4358e-1  f64 -3.4360e-1  f64@f32coords -3.4358e-1
+    err: total 3.66e-5  |  port arithmetic 1.46e-5  |  input quantisation 2.20e-5  |  f32 reference 2.20e-5
+    taps: arg0=1.320537194e-6  k0=1.149146236e-3  arg1=1.116174644e-5  invK1=2.993187866e+2  rmin=2.599999905e-1
+    f64 ell: arg0=1.320799407e-6 k0=1.149260374e-3  arg1=1.116158102e-5 k1=3.340895242e-3 invK1=2.993209686e+2 main=-3.436023854e-1
+    port f64-relative error: arg0 -1.99e-4  k0 -9.93e-5  arg1 1.48e-5  invK1 -7.29e-6
+prim  13 ell  P=[-0.480, 2.880, -1.140, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.190, 0.190, 0.190]
+    ops 497  depth 63  worst 2.33e-7 at (-0.68, 3.09, -1.03)
+    handwired 1.1577e-1  f32 1.1577e-1  f64 1.1577e-1  f64@f32coords 1.1577e-1
+    err: total 2.33e-7  |  port arithmetic 1.31e-7  |  input quantisation 1.02e-7  |  f32 reference 6.94e-8
+    taps: arg0=2.589902639e+0  k0=1.609317303e+0  arg1=7.174245453e+1  invK1=1.180624664e-1  rmin=1.899999976e-1
+    f64 ell: arg0=2.589905759e+0 k0=1.609318414e+0  arg1=7.174254181e+1 k1=8.470096918e+0 invK1=1.180624035e-1 main=1.157704988e-1
+    port f64-relative error: arg0 -1.20e-6  k0 -6.91e-7  arg1 -1.22e-6  invK1 5.33e-7
+prim  14 ell  P=[-0.220, 2.800, -1.580, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.160, 0.160, 0.160]
+    ops 497  depth 63  worst 1.94e-7 at (-0.23, 3.04, -1.46)
+    handwired 1.0508e-1  f32 1.0508e-1  f64 1.0508e-1  f64@f32coords 1.0508e-1
+    err: total 1.94e-7  |  port arithmetic 8.66e-8  |  input quantisation 1.08e-7  |  f32 reference 1.42e-7
+    taps: arg0=2.744750977e+0  k0=1.656728983e+0  arg1=1.072168579e+2  invK1=9.657584131e-2  rmin=1.599999964e-1
+    f64 ell: arg0=2.744746971e+0 k0=1.656727790e+0  arg1=1.072166785e+2 k1=1.035454869e+1 invK1=9.657591365e-2 main=1.050764464e-1
+    port f64-relative error: arg0 1.46e-6  k0 7.20e-7  arg1 1.67e-6  invK1 -7.49e-7
+prim  15 ell  P=[-0.360, 2.460, -1.340, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.260, 0.440, 0.340]
+    ops 525  depth 63  worst 3.13e-5 at (-0.36, 2.46, -1.34)
+    handwired -3.6922e-1  f32 -3.6921e-1  f64 -3.6918e-1  f64@f32coords -3.6921e-1
+    err: total 3.13e-5  |  port arithmetic 2.98e-6  |  input quantisation 2.84e-5  |  f32 reference 2.84e-5
+    taps: arg0=1.202121098e-6  k0=1.096412772e-3  arg1=8.799032912e-6  invK1=3.371184387e+2  rmin=2.599999905e-1
+    f64 ell: arg0=1.202056462e-6 k0=1.096383355e-3  arg1=8.800056196e-6 k1=2.966488867e-3 invK1=3.370988549e+2 main=-3.691843617e-1
+    port f64-relative error: arg0 5.38e-5  k0 2.68e-5  arg1 -1.16e-4  invK1 5.81e-5
+prim  16 ell  P=[0.000, 3.000, 0.760, 1.000, 0.000, 0.000, 0.000, 0.819, -0.573, 0.000, 0.573, 0.819, 0.420, 0.440, 0.380]
+    ops 509  depth 63  worst 1.52e-5 at (0.00, 3.00, 0.76)
+    handwired -4.1217e-1  f32 -4.1217e-1  f64 -4.1216e-1  f64@f32coords -4.1217e-1
+    err: total 1.52e-5  |  port arithmetic 4.01e-7  |  input quantisation 1.48e-5  |  f32 reference 1.48e-5
+    taps: arg0=1.116515364e-6  k0=1.056652865e-3  arg1=6.558231689e-6  invK1=3.904869995e+2  rmin=3.799999952e-1
+    f64 ell: arg0=1.116555385e-6 k0=1.056671844e-3  arg1=6.558951733e-6 k1=2.561045047e-3 invK1=3.904656035e+2 main=-4.121580328e-1
+    port f64-relative error: arg0 -3.58e-5  k0 -1.80e-5  arg1 -1.10e-4  invK1 5.48e-5
+prim  17 ell  P=[0.000, 2.840, 0.520, 1.000, 0.000, 0.000, 0.000, 0.894, -0.447, 0.000, 0.447, 0.894, 0.460, 0.480, 0.380]
+    ops 513  depth 63  worst 3.55e-5 at (0.00, 2.84, 0.52)
+    handwired -4.3770e-1  f32 -4.3768e-1  f64 -4.3766e-1  f64@f32coords -4.3768e-1
+    err: total 3.55e-5  |  port arithmetic 1.82e-5  |  input quantisation 1.73e-5  |  f32 reference 1.73e-5
+    taps: arg0=1.148699880e-6  k0=1.071774168e-3  arg1=5.983158189e-6  invK1=4.088224792e+2  rmin=3.799999952e-1
+    f64 ell: arg0=1.148391420e-6 k0=1.071630263e-3  arg1=5.982522980e-6 k1=2.445919659e-3 invK1=4.088441729e+2 main=-4.376602752e-1
+    port f64-relative error: arg0 2.69e-4  k0 1.34e-4  arg1 1.06e-4  invK1 -5.31e-5
+prim  18 cone P=[0.000, 2.440, 0.620, 0.000, 0.260, 0.300, 0.158, 0.040, 0.156, 6.345, 0.240, 0.200]
+    ops 476  depth 45  worst 1.81e-4 at (0.00, 2.51, 0.70)
+    handwired -2.2868e-1  f32 -2.2850e-1  f64 -2.2850e-1  f64@f32coords -2.2850e-1
+    err: total 1.81e-4  |  port arithmetic 1.81e-4  |  input quantisation 6.04e-8  |  f32 reference 6.79e-8  <-- WRONG
+    taps: aZArg=2.021097811e-3  aZRoot=4.495662078e-2  aZVal=8.525775373e-2  aYArg=3.100714821e-4  aYRoot=1.760884561e-2  aYVal=-1.282687485e-1  yy=4.435594380e-2  zz=-1.132440567e-1  x2=1.428514751e-9  y2=3.100700560e-4  z2=2.021096414e-3  k=2.285623513e-12  armZ=8.525775373e-2  armY=-1.282687485e-1  armM=-2.286843956e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=8.526e-2 Y=-1.283e-1 M=-2.285e-1 picks M  port's -2.287e-1 is nearest arm M  spread=3.14e-1  Z-margin=-3.15e-4 Y-margin=4.84e-5
+    f64 pieces: yy=4.435594660e-2 zz=-1.132440534e-1 x2=1.428857101e-9 y2=3.100701199e-4 z2=2.021096383e-3 k=2.286171361e-12
+prim  19 ell  P=[0.000, 3.080, 1.000, 1.000, 0.000, 0.000, 0.000, 0.923, -0.385, 0.000, 0.385, 0.923, 0.440, 0.500, 0.480]
+    ops 509  depth 63  worst 1.55e-5 at (-0.00, 3.08, 1.00)
+    handwired -4.6058e-1  f32 -4.6059e-1  f64 -4.6060e-1  f64@f32coords -4.6059e-1
+    err: total 1.55e-5  |  port arithmetic 5.78e-6  |  input quantisation 9.68e-6  |  f32 reference 9.68e-6
+    taps: arg0=1.158225700e-6  k0=1.076209010e-3  arg1=5.448081538e-6  invK1=4.284283447e+2  rmin=4.399999976e-1
+    f64 ell: arg0=1.158764071e-6 k0=1.076459043e-3  arg1=5.450244855e-6 k1=2.334575948e-3 invK1=4.283433148e+2 main=-4.605976857e-1
+    port f64-relative error: arg0 -4.65e-4  k0 -2.32e-4  arg1 -3.97e-4  invK1 1.99e-4
+prim  20 ell  P=[0.000, 3.120, 1.240, 1.000, 0.000, 0.000, 0.000, 0.894, -0.447, 0.000, 0.447, 0.894, 0.380, 0.420, 0.300]
+    ops 521  depth 63  worst 4.57e-5 at (0.00, 3.12, 1.24)
+    handwired -3.5286e-1  f32 -3.5283e-1  f64 -3.5281e-1  f64@f32coords -3.5283e-1
+    err: total 4.57e-5  |  port arithmetic 2.40e-5  |  input quantisation 2.17e-5  |  f32 reference 2.17e-5
+    taps: arg0=1.298839379e-6  k0=1.139666303e-3  arg1=1.040799998e-5  invK1=3.099676514e+2  rmin=3.000000119e-1
+    f64 ell: arg0=1.298912788e-6 k0=1.139698551e-3  arg1=1.041128613e-5 k1=3.226652465e-3 invK1=3.099187194e+2 main=-3.528113582e-1
+    port f64-relative error: arg0 -5.65e-5  k0 -2.83e-5  arg1 -3.16e-4  invK1 1.58e-4
+prim  21 ell  P=[0.000, 2.880, 1.300, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.330, 0.330, 0.300]
+    ops 505  depth 63  worst 1.40e-5 at (0.00, 2.88, 1.30)
+    handwired -3.1579e-1  f32 -3.1580e-1  f64 -3.1581e-1  f64@f32coords -3.1580e-1
+    err: total 1.40e-5  |  port arithmetic 9.48e-6  |  input quantisation 4.52e-6  |  f32 reference 4.52e-6
+    taps: arg0=1.079302592e-6  k0=1.038894872e-3  arg1=1.080025868e-5  invK1=3.042866821e+2  rmin=3.000000119e-1
+    f64 ell: arg0=1.080002622e-6 k0=1.039231746e-3  arg1=1.080629747e-5 k1=3.287293335e-3 invK1=3.042016328e+2 main=-3.158074554e-1
+    port f64-relative error: arg0 -6.48e-4  k0 -3.24e-4  arg1 -5.59e-4  invK1 2.80e-4
+prim  22 ell  P=[0.000, 2.660, 1.420, 1.000, 0.000, 0.000, 0.000, 0.958, 0.287, 0.000, -0.287, 0.958, 0.270, 0.280, 0.260]
+    ops 517  depth 63  worst 1.16e-5 at (-0.00, 2.66, 1.42)
+    handwired -2.6548e-1  f32 -2.6548e-1  f64 -2.6547e-1  f64@f32coords -2.6548e-1
+    err: total 1.16e-5  |  port arithmetic 5.53e-6  |  input quantisation 6.11e-6  |  f32 reference 6.09e-6
+    taps: arg0=1.105544925e-6  k0=1.051448984e-3  arg1=1.565285493e-5  invK1=2.527570343e+2  rmin=2.599999905e-1
+    f64 ell: arg0=1.105520176e-6 k0=1.051437195e-3  arg1=1.565387208e-5 k1=3.956497451e-3 invK1=2.527488043e+2 main=-2.654700751e-1
+    port f64-relative error: arg0 2.24e-5  k0 1.12e-5  arg1 -6.50e-5  invK1 3.26e-5
+prim  23 ell  P=[0.000, 2.500, 1.500, 1.000, 0.000, 0.000, 0.000, 0.894, 0.447, 0.000, -0.447, 0.894, 0.230, 0.240, 0.220]
+    ops 517  depth 63  worst 9.00e-6 at (0.00, 2.50, 1.50)
+    handwired -2.3536e-1  f32 -2.3536e-1  f64 -2.3537e-1  f64@f32coords -2.3536e-1
+    err: total 9.00e-6  |  port arithmetic 9.83e-9  |  input quantisation 9.01e-6  |  f32 reference 9.02e-6
+    taps: arg0=1.032706223e-6  k0=1.016221591e-3  arg1=1.860552402e-5  invK1=2.318350220e+2  rmin=2.199999988e-1
+    f64 ell: arg0=1.032864713e-6 k0=1.016299519e-3  arg1=1.860695254e-5 k1=4.313577696e-3 invK1=2.318261245e+2 main=-2.353653339e-1
+    port f64-relative error: arg0 -1.53e-4  k0 -7.67e-5  arg1 -7.68e-5  invK1 3.84e-5
+prim  24 ell  P=[0.320, 2.980, 1.020, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.150, 0.280, 0.280]
+    ops 529  depth 63  worst 3.04e-5 at (0.32, 2.98, 1.02)
+    handwired -1.9796e-1  f32 -1.9796e-1  f64 -1.9799e-1  f64@f32coords -1.9796e-1
+    err: total 3.04e-5  |  port arithmetic 7.10e-7  |  input quantisation 2.97e-5  |  f32 reference 2.97e-5
+    taps: arg0=1.399029657e-6  k0=1.182805747e-3  arg1=3.561458652e-5  invK1=1.675660553e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.399792623e-6 k0=1.183128320e-3  arg1=3.562305874e-5 k1=5.968505570e-3 invK1=1.675461283e+2 main=-1.979940395e-1
+    port f64-relative error: arg0 -5.45e-4  k0 -2.73e-4  arg1 -2.38e-4  invK1 1.19e-4
+prim  25 ell  P=[0.290, 2.560, 1.240, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.190, 0.270, 0.290]
+    ops 533  depth 63  worst 2.90e-5 at (0.29, 2.56, 1.24)
+    handwired -2.3196e-1  f32 -2.3197e-1  f64 -2.3199e-1  f64@f32coords -2.3197e-1
+    err: total 2.90e-5  |  port arithmetic 1.10e-5  |  input quantisation 1.80e-5  |  f32 reference 1.80e-5
+    taps: arg0=1.394662263e-6  k0=1.180958119e-3  arg1=2.585944276e-5  invK1=1.966484222e+2  rmin=1.899999976e-1
+    f64 ell: arg0=1.395625064e-6 k0=1.181365762e-3  arg1=2.587080943e-5 k1=5.086335560e-3 invK1=1.966051961e+2 main=-2.319882601e-1
+    port f64-relative error: arg0 -6.90e-4  k0 -3.45e-4  arg1 -4.39e-4  invK1 2.20e-4
+prim  26 ell  P=[0.320, 2.920, 1.280, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.100, 0.080, 0.130]
+    ops 549  depth 63  worst 8.41e-5 at (0.32, 2.92, 1.28)
+    handwired -1.0234e-1  f32 -1.0238e-1  f64 -1.0243e-1  f64@f32coords -1.0238e-1
+    err: total 8.41e-5  |  port arithmetic 3.77e-5  |  input quantisation 4.65e-5  |  f32 reference 4.65e-5
+    taps: arg0=1.317133183e-6  k0=1.147664152e-3  arg1=1.254588133e-4  invK1=8.927902222e+1  rmin=7.999999821e-2
+    f64 ell: arg0=1.314842874e-6 k0=1.146665982e-3  arg1=1.250352222e-4 k1=1.118191496e-2 invK1=8.943012027e+1 main=-1.024288901e-1
+    port f64-relative error: arg0 1.74e-3  k0 8.70e-4  arg1 3.39e-3  invK1 -1.69e-3
+prim  27 ell  P=[0.335, 2.860, 1.320, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.055, 0.055, 0.055]
+    ops 517  depth 63  worst 2.24e-7 at (0.33, 2.86, 1.32)
+    handwired -4.9500e-2  f32 -4.9500e-2  f64 -4.9500e-2  f64@f32coords -4.9500e-2
+    err: total 2.24e-7  |  port arithmetic 1.10e-7  |  input quantisation 1.14e-7  |  f32 reference 1.16e-7
+    taps: arg0=1.000082586e-2  k0=1.000041291e-1  arg1=3.306057930e+0  invK1=5.499773026e-1  rmin=5.499999970e-2
+    f64 ell: arg0=1.000000000e-2 k0=1.000000000e-1  arg1=3.305785124e+0 k1=1.818181818e+0 invK1=5.500000000e-1 main=-4.950000000e-2
+    port f64-relative error: arg0 8.26e-5  k0 4.13e-5  arg1 8.25e-5  invK1 -4.13e-5
+prim  28 ell  P=[-0.320, 2.980, 1.020, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.150, 0.280, 0.280]
+    ops 529  depth 63  worst 3.44e-5 at (-0.32, 2.98, 1.02)
+    handwired -2.2078e-1  f32 -2.2077e-1  f64 -2.2074e-1  f64@f32coords -2.2077e-1
+    err: total 3.44e-5  |  port arithmetic 1.18e-5  |  input quantisation 2.27e-5  |  f32 reference 2.27e-5
+    taps: arg0=1.210963546e-6  k0=1.100437832e-3  arg1=2.478947135e-5  invK1=2.008474579e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.210285476e-6 k0=1.100129754e-3  arg1=2.478333589e-5 k1=4.978286441e-3 invK1=2.008723306e+2 main=-2.207425148e-1
+    port f64-relative error: arg0 5.60e-4  k0 2.80e-4  arg1 2.48e-4  invK1 -1.24e-4
+prim  29 ell  P=[-0.290, 2.560, 1.240, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.190, 0.270, 0.290]
+    ops 533  depth 63  worst 2.36e-5 at (-0.29, 2.56, 1.24)
+    handwired -2.1811e-1  f32 -2.1812e-1  f64 -2.1813e-1  f64@f32coords -2.1812e-1
+    err: total 2.36e-5  |  port arithmetic 9.39e-6  |  input quantisation 1.42e-5  |  f32 reference 1.43e-5
+    taps: arg0=1.523578476e-6  k0=1.234333147e-3  arg1=3.194822420e-5  invK1=1.769198761e+2  rmin=1.899999976e-1
+    f64 ell: arg0=1.524118957e-6 k0=1.234552128e-3  arg1=3.195262948e-5 k1=5.652665697e-3 invK1=1.769076845e+2 main=-2.181321301e-1
+    port f64-relative error: arg0 -3.55e-4  k0 -1.77e-4  arg1 -1.38e-4  invK1 6.89e-5
+prim  30 ell  P=[-0.320, 2.920, 1.280, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.100, 0.080, 0.130]
+    ops 549  depth 63  worst 1.01e-4 at (-0.32, 2.92, 1.28)
+    handwired -1.1577e-1  f32 -1.1572e-1  f64 -1.1567e-1  f64@f32coords -1.1572e-1
+    err: total 1.01e-4  |  port arithmetic 4.96e-5  |  input quantisation 5.18e-5  |  f32 reference 5.18e-5  <-- WRONG
+    taps: arg0=1.109372874e-6  k0=1.053267624e-3  arg1=8.259499737e-5  invK1=1.100330429e+2  rmin=7.999999821e-2
+    f64 ell: arg0=1.110588101e-6 k0=1.053844439e-3  arg1=8.283048631e-5 k1=9.101125552e-3 invK1=1.098765196e+2 main=-1.156707315e-1
+    port f64-relative error: arg0 -1.09e-3  k0 -5.47e-4  arg1 -2.84e-3  invK1 1.42e-3
+prim  31 ell  P=[-0.335, 2.860, 1.320, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.055, 0.055, 0.055]
+    ops 517  depth 63  worst 2.29e-7 at (-0.33, 2.78, 1.36)
+    handwired 3.3828e-2  f32 3.3828e-2  f64 3.3828e-2  f64@f32coords 3.3828e-2
+    err: total 2.29e-7  |  port arithmetic 1.29e-7  |  input quantisation 1.00e-7  |  f32 reference 1.10e-7
+    taps: arg0=2.608389854e+0  k0=1.615050912e+0  arg1=8.622777100e+2  invK1=3.405465186e-2  rmin=5.499999970e-2
+    f64 ell: arg0=2.608402701e+0 k0=1.615055015e+0  arg1=8.622818845e+2 k1=2.936463663e+1 invK1=3.405456749e-2 main=3.382802581e-2
+    port f64-relative error: arg0 -4.92e-6  k0 -2.54e-6  arg1 -4.84e-6  invK1 2.48e-6
+prim  32 ell  P=[0.000, 2.360, 1.300, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.240, 0.220, 0.300]
+    ops 525  depth 63  worst 6.35e-5 at (0.00, 2.36, 1.30)
+    handwired -2.7689e-1  f32 -2.7691e-1  f64 -2.7695e-1  f64@f32coords -2.7691e-1
+    err: total 6.35e-5  |  port arithmetic 2.72e-5  |  input quantisation 3.63e-5  |  f32 reference 3.63e-5
+    taps: arg0=1.102667966e-6  k0=1.050079940e-3  arg1=1.435241393e-5  invK1=2.639596558e+2  rmin=2.199999988e-1
+    f64 ell: arg0=1.101680390e-6 k0=1.049609637e-3  arg1=1.433299417e-5 k1=3.785894105e-3 invK1=2.641383970e+2 main=-2.769512108e-1
+    port f64-relative error: arg0 8.96e-4  k0 4.48e-4  arg1 1.35e-3  invK1 -6.77e-4
+prim  33 ell  P=[0.000, 2.280, 1.380, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.170, 0.150, 0.190]
+    ops 533  depth 63  worst 2.28e-5 at (-0.00, 2.28, 1.38)
+    handwired -1.7628e-1  f32 -1.7629e-1  f64 -1.7631e-1  f64@f32coords -1.7629e-1
+    err: total 2.28e-5  |  port arithmetic 4.59e-6  |  input quantisation 1.82e-5  |  f32 reference 1.82e-5
+    taps: arg0=1.129843668e-6  k0=1.062941039e-3  arg1=3.628015838e-5  invK1=1.660219116e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.129422088e-6 k0=1.062742719e-3  arg1=3.625726517e-5 k1=6.021400599e-3 invK1=1.660743184e+2 main=-1.763067047e-1
+    port f64-relative error: arg0 3.73e-4  k0 1.87e-4  arg1 6.31e-4  invK1 -3.16e-4
+prim  34 cone P=[0.000, 2.560, 1.440, 0.000, -0.095, 0.165, 0.036, 0.015, 0.036, 27.701, 0.225, 0.210]
+    ops 431  depth 47  worst 1.13e-3 at (0.00, 2.55, 1.47)
+    handwired -2.2154e-1  f32 -2.2040e-1  f64 -2.2040e-1  f64@f32coords -2.2040e-1
+    err: total 1.13e-3  |  port arithmetic 1.13e-3  |  input quantisation 5.39e-9  |  f32 reference 8.61e-9  <-- WRONG
+    taps: aZArg=3.303549965e-5  aZRoot=5.747651681e-3  aZVal=-5.093528330e-2  aYArg=1.242588041e-6  aYRoot=1.114714309e-3  aYVal=-1.941214800e-1  yy=5.852076225e-3  zz=-3.024792299e-2  x2=6.278692233e-9  y2=1.236309345e-6  z2=3.302922050e-5  k=1.384592961e-12  armZ=-5.093528330e-2  armY=-1.941214800e-1  armM=-2.215366662e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-5.094e-2 Y=-1.941e-1 M=-2.204e-1 picks M  port's -2.215e-1 is nearest arm M  spread=1.69e-1  Z-margin=-1.19e-6 Y-margin=4.44e-8
+    f64 pieces: yy=5.852098024e-3 zz=-3.024790198e-2 x2=6.278562120e-9 y2=1.236318551e-6 z2=3.302917422e-5 k=1.384564215e-12
+prim  35 cone P=[0.000, 2.465, 1.605, 0.000, -0.129, 0.133, 0.034, 0.015, 0.034, 29.218, 0.210, 0.195]
+    ops 431  depth 47  worst 1.19e-3 at (-0.00, 2.38, 1.69)
+    handwired -1.9846e-1  f32 -1.9726e-1  f64 -1.9726e-1  f64@f32coords -1.9726e-1
+    err: total 1.19e-3  |  port arithmetic 1.19e-3  |  input quantisation 2.74e-9  |  f32 reference 3.57e-9  <-- WRONG
+    taps: aZArg=4.624402663e-6  aZRoot=2.150442451e-3  aZVal=-1.324674934e-1  aYArg=1.751516174e-5  aYRoot=4.185111728e-3  aYVal=-8.786770701e-2  yy=2.261501923e-2  zz=-1.160997897e-2  x2=1.116007731e-8  y2=1.750400224e-5  z2=4.613242709e-6  k=2.461048075e-12  armZ=-1.324674934e-1  armY=-8.786770701e-2  armM=-1.984551847e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.325e-1 Y=-8.787e-2 M=-1.973e-1 picks M  port's -1.985e-1 is nearest arm M  spread=1.09e-1  Z-margin=-1.57e-7 Y-margin=5.95e-7
+    f64 pieces: yy=2.261502956e-2 zz=-1.160997044e-2 x2=1.116008533e-8 y2=1.750401902e-5 z2=4.613236127e-6 k=2.461049917e-12
+prim  36 cone P=[0.000, 2.336, 1.738, 0.000, -0.149, 0.101, 0.032, 0.015, 0.032, 30.864, 0.195, 0.180]
+    ops 419  depth 47  worst 1.28e-3 at (-0.00, 2.21, 1.82)
+    handwired -1.8099e-1  f32 -1.7971e-1  f64 -1.7971e-1  f64@f32coords -1.7971e-1
+    err: total 1.28e-3  |  port arithmetic 1.28e-3  |  input quantisation 1.94e-8  |  f32 reference 2.70e-8  <-- WRONG
+    taps: aZArg=7.602579899e-7  aZRoot=8.719277685e-4  aZVal=-1.535386592e-1  aYArg=2.466375008e-5  aYRoot=4.966261331e-3  aYVal=-4.202033579e-2  yy=2.758521773e-2  zz=-4.814783111e-3  x2=9.156777558e-9  y2=2.465459329e-5  z2=7.511011972e-7  k=2.019275589e-12  armZ=-1.535386592e-1  armY=-4.202033579e-2  armM=-1.809923798e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.535e-1 Y=-4.202e-2 M=-1.797e-1 picks M  port's -1.810e-1 is nearest arm M  spread=1.38e-1  Z-margin=-2.42e-8 Y-margin=7.93e-7
+    f64 pieces: yy=2.758519955e-2 zz=-4.814800453e-3 x2=9.156399491e-9 y2=2.465456078e-5 z2=7.511066301e-7 k=2.019192107e-12
+prim  37 cone P=[0.000, 2.187, 1.838, 0.000, -0.160, 0.071, 0.031, 0.015, 0.030, 32.653, 0.180, 0.166]
+    ops 419  depth 47  worst 1.29e-3 at (-0.00, 2.05, 1.90)
+    handwired -1.6517e-1  f32 -1.6388e-1  f64 -1.6388e-1  f64@f32coords -1.6388e-1
+    err: total 1.29e-3  |  port arithmetic 1.29e-3  |  input quantisation 9.32e-9  |  f32 reference 2.65e-8  <-- WRONG
+    taps: aZArg=6.030499549e-7  aZRoot=7.765628397e-4  aZVal=-1.402428448e-1  aYArg=2.109911657e-5  aYRoot=4.593377467e-3  aYVal=-3.046217561e-2  yy=2.623918280e-2  zz=-4.385817796e-3  x2=1.396588534e-8  y2=2.108515037e-5  z2=5.890840953e-7  k=3.079792064e-12  armZ=-1.402428448e-1  armY=-3.046217561e-2  armM=-1.651682556e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.402e-1 Y=-3.046e-2 M=-1.639e-1 picks M  port's -1.652e-1 is nearest arm M  spread=1.33e-1  Z-margin=-1.79e-8 Y-margin=6.41e-7
+    f64 pieces: yy=2.623920116e-2 zz=-4.385798843e-3 x2=1.396594892e-8 y2=2.108518012e-5 z2=5.890789644e-7 k=3.079805972e-12
+prim  38 cone P=[0.000, 2.027, 1.909, 0.000, -0.163, 0.047, 0.029, 0.015, 0.029, 34.602, 0.166, 0.151]
+    ops 419  depth 47  worst 1.44e-3 at (-0.00, 1.90, 1.95)
+    handwired -1.5181e-1  f32 -1.5037e-1  f64 -1.5037e-1  f64@f32coords -1.5037e-1
+    err: total 1.44e-3  |  port arithmetic 1.44e-3  |  input quantisation 8.94e-9  |  f32 reference 1.38e-8  <-- WRONG
+    taps: aZArg=8.449200664e-7  aZRoot=9.191952413e-4  aZVal=-1.189439297e-1  aYArg=1.599501957e-5  aYRoot=3.999377135e-3  aYVal=-2.721324563e-2  yy=2.351963520e-2  zz=-5.380364135e-3  x2=8.313675970e-9  y2=1.598670679e-5  z2=8.366063753e-7  k=1.833352697e-12  armZ=-1.189439297e-1  armY=-2.721324563e-2  armM=-1.518070400e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.189e-1 Y=-2.721e-2 M=-1.504e-1 picks M  port's -1.518e-1 is nearest arm M  spread=1.23e-1  Z-margin=-2.40e-8 Y-margin=4.58e-7
+    f64 pieces: yy=2.351964247e-2 zz=-5.380357530e-3 x2=8.313890347e-9 y2=1.598671652e-5 z2=8.366043428e-7 k=1.833399884e-12
+prim  39 cone P=[0.000, 1.864, 1.956, 0.000, -0.162, 0.029, 0.027, 0.015, 0.027, 36.731, 0.151, 0.136]
+    ops 407  depth 47  worst 1.52e-3 at (-0.00, 1.73, 1.98)
+    handwired -1.3648e-1  f32 -1.3496e-1  f64 -1.3496e-1  f64@f32coords -1.3496e-1
+    err: total 1.52e-3  |  port arithmetic 1.52e-3  |  input quantisation 1.36e-9  |  f32 reference 2.01e-9  <-- WRONG
+    taps: aZArg=6.412607263e-7  aZRoot=8.007875877e-4  aZVal=-1.064863205e-1  aYArg=1.367948698e-5  aYRoot=3.698578803e-3  aYVal=-1.489770412e-2  yy=2.240784280e-2  zz=-4.817157984e-3  x2=9.504287135e-9  y2=1.366998276e-5  z2=6.317564498e-7  k=2.095909167e-12  armZ=-1.064863205e-1  armY=-1.489770412e-2  armM=-1.364813000e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.065e-1 Y=-1.490e-2 M=-1.350e-1 picks M  port's -1.365e-1 is nearest arm M  spread=1.20e-1  Z-margin=-1.71e-8 Y-margin=3.69e-7
+    f64 pieces: yy=2.240784837e-2 zz=-4.817151631e-3 x2=9.504292344e-9 y2=1.366999018e-5 z2=6.317547593e-7 k=2.095910309e-12
+prim  40 cone P=[0.000, 1.701, 1.985, 0.000, -0.159, 0.014, 0.026, 0.015, 0.025, 39.062, 0.136, 0.121]
+    ops 407  depth 47  worst 1.62e-3 at (-0.00, 1.56, 1.99)
+    handwired -1.2041e-1  f32 -1.1879e-1  f64 -1.1879e-1  f64@f32coords -1.1879e-1
+    err: total 1.62e-3  |  port arithmetic 1.62e-3  |  input quantisation 1.14e-8  |  f32 reference 9.19e-9  <-- WRONG
+    taps: aZArg=1.898249167e-7  aZRoot=4.355448473e-4  aZVal=-1.040365323e-1  aYArg=1.348864407e-5  aYRoot=3.672688734e-3  aYVal=7.564395666e-3  yy=2.294619381e-2  zz=-2.653805539e-3  x2=9.532218570e-9  y2=1.347911166e-5  z2=1.802927017e-7  k=2.102068736e-12  armZ=-1.040365323e-1  armY=7.564395666e-3  armM=-1.204085425e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.040e-1 Y=7.564e-3 M=-1.188e-1 picks M  port's -1.204e-1 is nearest arm M  spread=1.26e-1  Z-margin=-4.58e-9 Y-margin=3.42e-7
+    f64 pieces: yy=2.294618947e-2 zz=-2.653810528e-3 x2=9.532098596e-9 y2=1.347910685e-5 z2=1.802933841e-7 k=2.102042213e-12
+prim  41 cone P=[0.000, 1.542, 1.999, 0.000, -0.150, 0.003, 0.023, 0.015, 0.022, 44.444, 0.121, 0.106]
+    ops 395  depth 47  worst 1.84e-3 at (0.00, 1.46, 2.00)
+    handwired -1.1049e-1  f32 -1.0865e-1  f64 -1.0865e-1  f64@f32coords -1.0865e-1
+    err: total 1.84e-3  |  port arithmetic 1.84e-3  |  input quantisation 3.20e-8  |  f32 reference 3.30e-8  <-- WRONG
+    taps: aZArg=2.357317726e-6  aZRoot=1.535355812e-3  aZVal=-3.796196729e-2  aYArg=3.405033112e-6  aYRoot=1.845273189e-3  aYVal=-3.903786093e-2  yy=1.228478085e-2  zz=-1.021522004e-2  x2=9.426441849e-9  y2=3.395606655e-6  z2=2.347891268e-6  k=2.078742560e-12  armZ=-3.796196729e-2  armY=-3.903786093e-2  armM=-1.104882360e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-3.796e-2 Y=-3.904e-2 M=-1.086e-1 picks M  port's -1.105e-1 is nearest arm M  spread=7.07e-2  Z-margin=-5.23e-8 Y-margin=7.57e-8
+    f64 pieces: yy=1.228477861e-2 zz=-1.021522139e-2 x2=9.426473559e-9 y2=3.395605172e-6 z2=2.347891832e-6 k=2.078749515e-12
+prim  42 cone P=[0.000, 1.392, 2.002, 0.000, -0.140, -0.005, 0.020, 0.015, 0.019, 51.020, 0.106, 0.091]
+    ops 386  depth 47  worst 2.12e-3 at (0.00, 1.35, 2.00)
+    handwired -9.8960e-2  f32 -9.6843e-2  f64 -9.6843e-2  f64@f32coords -9.6843e-2
+    err: total 2.12e-3  |  port arithmetic 2.12e-3  |  input quantisation 7.58e-8  |  f32 reference 7.51e-8  <-- WRONG
+    taps: aZArg=3.541635806e-6  aZRoot=1.881923294e-3  aZVal=4.666499794e-3  aYArg=7.555871093e-7  aYRoot=8.692451520e-4  aYVal=-6.185076013e-2  yy=6.173843984e-3  zz=-1.342615671e-2  x2=8.506663818e-9  y2=7.470804348e-7  z2=3.533129075e-6  k=1.875910885e-12  armZ=4.666499794e-3  armY=-6.185076013e-2  armM=-9.895974398e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=4.666e-3 Y=-6.185e-2 M=-9.684e-2 picks M  port's -9.896e-2 is nearest arm M  spread=1.02e-1  Z-margin=-6.85e-8 Y-margin=1.45e-8
+    f64 pieces: yy=6.173854769e-3 zz=-1.342614523e-2 x2=8.507050944e-9 y2=7.470830610e-7 z2=3.533122965e-6 k=1.875996142e-12
+prim  43 cone P=[0.000, 1.252, 1.997, 0.000, -0.130, -0.009, 0.017, 0.015, 0.017, 59.172, 0.091, 0.076]
+    ops 386  depth 47  worst 2.45e-3 at (-0.00, 1.14, 1.98)
+    handwired -7.5104e-2  f32 -7.2650e-2  f64 -7.2650e-2  f64@f32coords -7.2650e-2
+    err: total 2.45e-3  |  port arithmetic 2.45e-3  |  input quantisation 9.92e-9  |  f32 reference 9.69e-9  <-- WRONG
+    taps: aZArg=6.504806294e-8  aZRoot=2.457184310e-4  aZVal=-6.196044758e-2  aYArg=3.848023880e-6  aYRoot=1.961637987e-3  aYVal=2.472325414e-2  yy=1.507262606e-2  zz=-1.827373169e-3  x2=8.614017943e-9  y2=3.839410056e-6  z2=5.643404677e-8  k=1.899584873e-12  armZ=-6.196044758e-2  armY=2.472325414e-2  armM=-7.510446012e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-6.141e-2 Y=2.472e-2 M=-7.265e-2 picks M  port's -7.510e-2 is nearest arm M  spread=9.74e-2  Z-margin=-9.43e-10 Y-margin=6.40e-8
+    f64 pieces: yy=1.507262127e-2 zz=-1.827378734e-3 x2=8.614104967e-9 y2=3.839408110e-6 z2=5.643439033e-8 k=1.899603963e-12
+prim  44 ell  P=[0.000, 1.123, 1.988, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.075, 0.075, 0.075]
+    ops 509  depth 63  worst 1.48e-7 at (-0.01, 1.23, 2.10)
+    handwired 7.7051e-2  f32 7.7051e-2  f64 7.7052e-2  f64@f32coords 7.7052e-2
+    err: total 1.48e-7  |  port arithmetic 4.61e-8  |  input quantisation 1.02e-7  |  f32 reference 1.33e-7
+    taps: arg0=4.110159397e+0  k0=2.027352810e+0  arg1=7.306948853e+2  invK1=3.699405491e-2  rmin=7.500000298e-2
+    f64 ell: arg0=4.110167438e+0 k0=2.027354788e+0  arg1=7.306964335e+2 k1=2.703139718e+1 invK1=3.699401823e-2 main=7.705160913e-2
+    port f64-relative error: arg0 -1.96e-6  k0 -9.76e-7  arg1 -2.12e-6  invK1 9.92e-7
+prim  45 cone P=[0.220, 2.520, 1.600, 0.029, -0.077, 0.166, 0.034, 0.019, 0.034, 29.218, 0.130, 0.111]
+    ops 420  depth 47  worst 1.21e-3 at (0.25, 2.45, 1.75)
+    handwired -1.1172e-1  f32 -1.1051e-1  f64 -1.1051e-1  f64@f32coords -1.1051e-1
+    err: total 1.21e-3  |  port arithmetic 1.21e-3  |  input quantisation 4.59e-9  |  f32 reference 8.44e-9  <-- WRONG
+    taps: aZArg=5.018383717e-7  aZRoot=7.084054523e-4  aZVal=-9.045151621e-2  aYArg=3.169963747e-5  aYRoot=5.630243104e-3  aYVal=3.450673819e-2  yy=3.042952158e-2  zz=-3.795476630e-3  x2=8.805285390e-9  y2=3.169083357e-5  z2=4.930330988e-7  k=3.128716036e-12  armZ=-9.045151621e-2  armY=3.450673819e-2  armM=-1.117247641e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-9.045e-2 Y=3.451e-2 M=-1.105e-1 picks M  port's -1.117e-1 is nearest arm M  spread=1.45e-1  Z-margin=-1.67e-8 Y-margin=1.07e-6
+    f64 pieces: yy=3.042952444e-2 zz=-3.795475555e-3 x2=8.805262714e-9 y2=3.169084266e-5 z2=4.930328473e-7 k=3.128707961e-12
+prim  46 cone P=[0.249, 2.443, 1.766, 0.029, -0.032, 0.180, 0.034, 0.019, 0.034, 29.218, 0.111, 0.092]
+    ops 420  depth 47  worst 1.21e-3 at (0.26, 2.43, 1.82)
+    handwired -1.0432e-1  f32 -1.0311e-1  f64 -1.0311e-1  f64@f32coords -1.0311e-1
+    err: total 1.21e-3  |  port arithmetic 1.21e-3  |  input quantisation 6.48e-8  |  f32 reference 6.46e-8  <-- WRONG
+    taps: aZArg=2.083452637e-5  aZRoot=4.564485513e-3  aZVal=4.106698930e-2  aYArg=3.135447969e-6  aYRoot=1.770719537e-3  aYVal=-5.941239372e-2  yy=9.557510726e-3  zz=-2.466748655e-2  x2=9.130967094e-9  y2=3.126317097e-6  z2=2.082539504e-5  k=3.244437921e-12  armZ=4.106698930e-2  armY=-5.941239372e-2  armM=-1.043195501e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=4.107e-2 Y=-5.941e-2 M=-1.031e-1 picks M  port's -1.043e-1 is nearest arm M  spread=1.44e-1  Z-margin=-7.05e-7 Y-margin=1.06e-7
+    f64 pieces: yy=9.557497369e-3 zz=-2.466750263e-2 x2=9.131164826e-9 y2=3.126308498e-6 z2=2.082542260e-5 k=3.244508314e-12
+prim  47 cone P=[0.278, 2.411, 1.945, 0.029, 0.016, 0.182, 0.034, 0.019, 0.034, 29.218, 0.092, 0.073]
+    ops 417  depth 45  worst 1.19e-3 at (0.30, 2.42, 2.06)
+    handwired -7.8917e-2  f32 -7.7723e-2  f64 -7.7723e-2  f64@f32coords -7.7723e-2
+    err: total 1.19e-3  |  port arithmetic 1.19e-3  |  input quantisation 3.61e-8  |  f32 reference 3.81e-8  <-- WRONG
+    taps: aZArg=4.891573553e-6  aZRoot=2.211690182e-3  aZVal=-8.827939630e-3  aYArg=1.699189852e-5  aYRoot=4.122123122e-3  aYVal=2.814187109e-2  yy=2.227761596e-2  zz=-1.194738224e-2  x2=6.299297084e-9  y2=1.698559936e-5  z2=4.885274393e-6  k=2.238282042e-12  armZ=-8.827939630e-3  armY=2.814187109e-2  armM=-7.891740650e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-8.828e-3 Y=2.814e-2 M=-7.772e-2 picks M  port's -7.892e-2 is nearest arm M  spread=1.06e-1  Z-margin=-1.65e-7 Y-margin=5.75e-7
+    f64 pieces: yy=2.227759655e-2 zz=-1.194740345e-2 x2=6.299009609e-9 y2=1.698557002e-5 z2=4.885291875e-6 k=2.238179842e-12
+prim  48 cone P=[0.308, 2.427, 2.127, 0.029, 0.062, 0.172, 0.034, 0.019, 0.034, 29.218, 0.073, 0.055]
+    ops 417  depth 45  worst 1.21e-3 at (0.32, 2.45, 2.19)
+    handwired -6.4873e-2  f32 -6.3665e-2  f64 -6.3665e-2  f64@f32coords -6.3665e-2
+    err: total 1.21e-3  |  port arithmetic 1.21e-3  |  input quantisation 4.16e-8  |  f32 reference 3.65e-8  <-- WRONG
+    taps: aZArg=1.604608224e-5  aZRoot=4.005756229e-3  aZVal=6.244181097e-2  aYArg=5.424941719e-6  aYRoot=2.329150448e-3  aYVal=-5.395933986e-3  yy=1.257878356e-2  zz=-2.164621465e-2  x2=9.664084644e-9  y2=5.415277428e-6  z2=1.603641795e-5  k=3.433866689e-12  armZ=6.244181097e-2  armY=-5.395933986e-3  armM=-6.487305462e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=6.244e-2 Y=-5.396e-3 M=-6.366e-2 picks M  port's -6.487e-2 is nearest arm M  spread=1.26e-1  Z-margin=-5.43e-7 Y-margin=1.83e-7
+    f64 pieces: yy=1.257877429e-2 zz=-2.164622571e-2 x2=9.664321955e-9 y2=5.415269884e-6 z2=1.603643476e-5 k=3.433951038e-12
+prim  49 ell  P=[0.337, 2.489, 2.299, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.055, 0.055, 0.055]
+    ops 517  depth 63  worst 2.12e-7 at (0.34, 2.49, 2.30)
+    handwired -5.4945e-2  f32 -5.4945e-2  f64 -5.4945e-2  f64@f32coords -5.4945e-2
+    err: total 2.12e-7  |  port arithmetic 7.08e-8  |  input quantisation 1.41e-7  |  f32 reference 1.45e-7
+    taps: arg0=9.924934830e-7  k0=9.962395998e-4  arg1=3.280969977e-4  invK1=5.520760345e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.000000000e-6 k0=1.000000000e-3  arg1=3.305785124e-4 k1=1.818181818e-2 invK1=5.500000000e+1 main=-5.494500000e-2
+    port f64-relative error: arg0 -7.51e-3  k0 -3.76e-3  arg1 -7.51e-3  invK1 3.77e-3
+prim  50 cone P=[-0.220, 2.520, 1.600, -0.029, -0.077, 0.166, 0.034, 0.019, 0.034, 29.218, 0.130, 0.111]
+    ops 423  depth 47  worst 1.21e-3 at (-0.22, 2.51, 1.63)
+    handwired -1.2483e-1  f32 -1.2362e-1  f64 -1.2362e-1  f64@f32coords -1.2362e-1
+    err: total 1.21e-3  |  port arithmetic 1.21e-3  |  input quantisation 1.44e-8  |  f32 reference 1.19e-8  <-- WRONG
+    taps: aZArg=2.612498429e-5  aZRoot=5.111260340e-3  aZVal=3.819288313e-2  aYArg=1.500334861e-6  aYRoot=1.224881620e-3  aYVal=-9.421090782e-2  yy=6.601278204e-3  zz=-2.762372047e-2  x2=8.916405392e-9  y2=1.491418402e-6  z2=2.611606760e-5  k=3.168199427e-12  armZ=3.819288313e-2  armY=-9.421090782e-2  armM=-1.248311922e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=3.819e-2 Y=-9.421e-2 M=-1.236e-1 picks M  port's -1.248e-1 is nearest arm M  spread=1.62e-1  Z-margin=-8.85e-7 Y-margin=5.05e-8
+    f64 pieces: yy=6.601294072e-3 zz=-2.762370593e-2 x2=8.916481566e-9 y2=1.491425680e-6 z2=2.611604095e-5 k=3.168226521e-12
+prim  51 cone P=[-0.249, 2.443, 1.766, -0.029, -0.032, 0.180, 0.034, 0.019, 0.034, 29.218, 0.111, 0.092]
+    ops 423  depth 47  worst 1.21e-3 at (-0.25, 2.44, 1.79)
+    handwired -1.0735e-1  f32 -1.0614e-1  f64 -1.0614e-1  f64@f32coords -1.0614e-1
+    err: total 1.21e-3  |  port arithmetic 1.21e-3  |  input quantisation 3.83e-10  |  f32 reference 5.03e-9  <-- WRONG
+    taps: aZArg=3.150740304e-5  aZRoot=5.613145418e-3  aZVal=7.170717418e-2  aYArg=5.271827490e-7  aYRoot=7.260735729e-4  aYVal=-8.993528783e-2  yy=3.888352774e-3  zz=-3.033664450e-2  x2=9.725157568e-9  y2=5.174575790e-7  z2=3.149767872e-5  k=3.455567213e-12  armZ=7.170717418e-2  armY=-8.993528783e-2  armM=-1.073500589e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=7.171e-2 Y=-8.994e-2 M=-1.061e-1 picks M  port's -1.074e-1 is nearest arm M  spread=1.78e-1  Z-margin=-1.07e-6 Y-margin=1.75e-8
+    f64 pieces: yy=3.888345827e-3 zz=-3.033665417e-2 x2=9.725028232e-9 y2=5.174557588e-7 z2=3.149769827e-5 k=3.455521344e-12
+prim  52 cone P=[-0.278, 2.411, 1.945, -0.029, 0.016, 0.182, 0.034, 0.019, 0.034, 29.218, 0.092, 0.073]
+    ops 420  depth 47  worst 1.18e-3 at (-0.29, 2.42, 2.03)
+    handwired -8.1570e-2  f32 -8.0392e-2  f64 -8.0392e-2  f64@f32coords -8.0392e-2
+    err: total 1.18e-3  |  port arithmetic 1.18e-3  |  input quantisation 3.42e-8  |  f32 reference 3.37e-8  <-- WRONG
+    taps: aZArg=1.170346331e-5  aZRoot=3.421032103e-3  aZVal=2.650710940e-2  aYArg=8.494513168e-6  aYRoot=2.914534649e-3  aYVal=-7.141940296e-3  yy=1.574273407e-2  zz=-1.848226413e-2  x2=1.240634262e-8  y2=8.482106750e-6  z2=1.169105690e-5  k=4.408252843e-12  armZ=2.650710940e-2  armY=-7.141940296e-3  armM=-8.157001436e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=2.651e-2 Y=-7.142e-3 M=-8.039e-2 picks M  port's -8.157e-2 is nearest arm M  spread=1.07e-1  Z-margin=-3.96e-7 Y-margin=2.87e-7
+    f64 pieces: yy=1.574271153e-2 zz=-1.848228847e-2 x2=1.240633031e-8 y2=8.482083270e-6 z2=1.169108844e-5 k=4.408248300e-12
+prim  53 cone P=[-0.308, 2.427, 2.127, -0.029, 0.062, 0.172, 0.034, 0.019, 0.034, 29.218, 0.073, 0.055]
+    ops 420  depth 47  worst 1.21e-3 at (-0.33, 2.48, 2.27)
+    handwired -5.6743e-2  f32 -5.5535e-2  f64 -5.5535e-2  f64@f32coords -5.5535e-2
+    err: total 1.21e-3  |  port arithmetic 1.21e-3  |  input quantisation 4.18e-8  |  f32 reference 4.46e-8  <-- WRONG
+    taps: aZArg=1.340046765e-6  aZRoot=1.157603809e-3  aZVal=-2.077666298e-2  aYArg=2.681105980e-5  aYRoot=5.177939311e-3  aYVal=7.784113288e-2  yy=2.798499726e-2  zz=-6.240000948e-3  x2=7.407105151e-9  y2=2.680365287e-5  z2=1.332639613e-6  k=2.631911182e-12  armZ=-2.077666298e-2  armY=7.784113288e-2  armM=-5.674329400e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-2.078e-2 Y=7.784e-2 M=-5.554e-2 picks M  port's -5.674e-2 is nearest arm M  spread=1.33e-1  Z-margin=-4.51e-8 Y-margin=9.08e-7
+    f64 pieces: yy=2.798499731e-2 zz=-6.240002691e-3 x2=7.406850185e-9 y2=2.680365355e-5 z2=1.332640509e-6 k=2.631820525e-12
+prim  54 ell  P=[-0.337, 2.489, 2.299, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.055, 0.055, 0.055]
+    ops 517  depth 63  worst 1.79e-7 at (-0.38, 2.53, 2.36)
+    handwired 3.1969e-2  f32 3.1969e-2  f64 3.1969e-2  f64@f32coords 3.1969e-2
+    err: total 1.79e-7  |  port arithmetic 6.76e-8  |  input quantisation 1.11e-7  |  f32 reference 1.19e-7
+    taps: arg0=2.500371933e+0  k0=1.581256509e+0  arg1=8.265692139e+2  invK1=3.478246927e-2  rmin=5.499999970e-2
+    f64 ell: arg0=2.500362048e+0 k0=1.581253316e+0  arg1=8.265659663e+2 k1=2.875006028e+1 invK1=3.478253576e-2 main=3.196893236e-2
+    port f64-relative error: arg0 3.95e-6  k0 2.02e-6  arg1 3.93e-6  invK1 -1.91e-6
+prim  55 fin  P=[0.240, 3.060, 1.160, 0.661, -0.682, -0.314, 0.423, 0.684, -0.595, 0.620, 0.260, 0.740, 0.050, 0.034, 12.000, 0.000, -0.150, 0.320, -0.400, 0.780, -0.540, 1.240, -0.520, 1.580, -0.360, 1.780, -0.060, 1.760, 0.220, 1.460, 0.480, 1.020, 0.640, 0.540, 0.660, 0.160, 0.520, 0.000, 0.260, -0.026, -0.012, 0.000, 0.000, 0.000, 0.160, 0.000, 0.300]
+    ops 2713  depth 320  worst 3.39e-5 at (0.24, 3.06, 1.16)
+    handwired -1.5673e-5  f32 -4.9664e-5  f64 -4.9599e-5  f64@f32coords -4.9665e-5
+    err: total 3.39e-5  |  port arithmetic 3.40e-5  |  input quantisation 6.63e-8  |  f32 reference 6.51e-8
+    taps: p0=1.567818799e-5  pA=2.464076942e-9  pN=2.000000000e+0  pg1=0.000000000e+0  p1=7.867251739e-9  s0=4.339538293e-7  sA=6.641526218e-11  sN=1.000000000e+0  g0=2.863564156e-2  gA=8.200000157e-4  gN=1.000000000e+0  l0=1.000409842e+0  lA=1.000820041e+0  lN=1.000000000e+0  o0=3.398339450e-2  oA=1.154871075e-3  oN=2.000000000e+0  og1=0.000000000e+0  o1=3.675904591e-3  pu=4.963946776e-5  pv=6.087239854e-6  pn=4.930270734e-7  dPoly=2.464076942e-9  poly=-1.567818799e-5  hh=4.999863729e-2  rho=3.399907425e-2  q=4.928243698e-7  sl=4.339538293e-7  L=2.863607556e-2  denom=1.000409842e+0  num=-1.567974687e-5  ex=3.398339450e-2  ey2=-1.599906944e-2  ox=3.398339450e-2  oy=0.000000000e+0  mt=0.000000000e+0  oRoot=3.398339450e-2
+prim  56 fin  P=[-0.240, 3.060, 1.160, -0.661, -0.682, -0.314, 0.423, -0.684, 0.595, -0.620, 0.260, 0.740, 0.050, 0.034, 12.000, 0.000, -0.150, 0.320, -0.400, 0.780, -0.540, 1.240, -0.520, 1.580, -0.360, 1.780, -0.060, 1.760, 0.220, 1.460, 0.480, 1.020, 0.640, 0.540, 0.660, 0.160, 0.520, 0.000, 0.260, -0.026, -0.012, 0.000, 0.000, 0.000, 0.160, 0.000, 0.300]
+    ops 2713  depth 320  worst 3.54e-5 at (-0.24, 3.06, 1.16)
+    handwired -1.0421e-4  f32 -1.3952e-4  f64 -1.3962e-4  f64@f32coords -1.3952e-4
+    err: total 3.54e-5  |  port arithmetic 3.53e-5  |  input quantisation 9.68e-8  |  f32 reference 9.51e-8
+    taps: p0=1.042535587e-4  pA=1.947110384e-8  pN=2.000000000e+0  pg1=0.000000000e+0  p1=6.216692583e-8  s0=1.481818035e-3  sA=2.195784873e-6  sN=1.000000000e+0  g0=2.863564156e-2  gA=8.200000157e-4  gN=1.000000000e+0  l0=1.000453472e+0  lA=1.000907063e+0  lN=1.000000000e+0  o0=3.385297582e-2  oA=1.146024209e-3  oN=2.000000000e+0  og1=0.000000000e+0  o1=3.647831269e-3  pu=1.395388972e-4  pv=4.938832950e-3  pn=7.667904720e-4  dPoly=1.947110384e-8  poly=-1.042535587e-4  hh=4.993710667e-2  rho=3.395723179e-2  q=7.631300832e-4  sl=1.481818035e-3  L=3.011745960e-2  denom=1.000453472e+0  num=-1.042559743e-4  ex=3.385297954e-2  ey2=-1.521674450e-2  ox=3.385297954e-2  oy=0.000000000e+0  mt=0.000000000e+0  oRoot=3.385297582e-2
+prim  57 ell  P=[0.283, 2.563, 0.456, 0.991, 0.130, -0.010, 0.131, -0.989, 0.075, 0.000, -0.075, -0.997, 0.260, 0.460, 0.240]
+    ops 529  depth 63  worst 5.00e-5 at (0.28, 2.56, 0.46)
+    handwired -3.7219e-1  f32 -3.7220e-1  f64 -3.7224e-1  f64@f32coords -3.7220e-1
+    err: total 5.00e-5  |  port arithmetic 8.99e-6  |  input quantisation 4.10e-5  |  f32 reference 4.10e-5
+    taps: arg0=1.166501534e-6  k0=1.080046990e-3  arg1=8.402705134e-6  invK1=3.449772339e+2  rmin=2.399999946e-1
+    f64 ell: arg0=1.166993876e-6 k0=1.080274908e-3  arg1=8.403991298e-6 k1=2.898963832e-3 invK1=3.449508369e+2 main=-3.722391780e-1
+    port f64-relative error: arg0 -4.22e-4  k0 -2.11e-4  arg1 -1.53e-4  invK1 7.65e-5
+prim  58 ell  P=[0.360, 1.980, 0.500, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.240, 0.240, 0.240]
+    ops 493  depth 63  worst 1.43e-7 at (0.41, 2.31, 0.59)
+    handwired 1.0268e-1  f32 1.0268e-1  f64 1.0268e-1  f64@f32coords 1.0268e-1
+    err: total 1.43e-7  |  port arithmetic 8.38e-8  |  input quantisation 5.90e-8  |  f32 reference 6.08e-8
+    taps: arg0=2.038720608e+0  k0=1.427837610e+0  arg1=3.539445496e+1  invK1=1.680863202e-1  rmin=2.399999946e-1
+    f64 ell: arg0=2.038721844e+0 k0=1.427838172e+0  arg1=3.539447646e+1 k1=5.949325715e+0 invK1=1.680862753e-1 main=1.026811612e-1
+    port f64-relative error: arg0 -6.06e-7  k0 -3.93e-7  arg1 -6.08e-7  invK1 2.67e-7
+prim  59 cone P=[0.360, 1.980, 0.500, 0.010, -0.680, -0.020, 0.463, 0.025, 0.462, 2.160, 0.270, 0.245]
+    ops 633  depth 49  worst 8.96e-5 at (0.37, 1.47, 0.48)
+    handwired -2.5119e-1  f32 -2.5110e-1  f64 -2.5110e-1  f64@f32coords -2.5110e-1
+    err: total 8.96e-5  |  port arithmetic 8.96e-5  |  input quantisation 7.11e-9  |  f32 reference 1.21e-8
+    taps: aZArg=6.288395729e-3  aZRoot=7.929940522e-2  aZVal=-7.368999720e-2  aYArg=5.552753434e-2  aYRoot=2.356428057e-1  aYVal=2.390576899e-1  yy=3.463463187e-1  zz=-1.165536940e-1  x2=8.505804949e-9  y2=5.552752689e-2  z2=6.288387347e-3  k=5.316128180e-12  armZ=-7.368999720e-2  armY=2.390576899e-1  armM=-2.511852682e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-7.369e-2 Y=2.391e-1 M=-2.511e-1 picks M  port's -2.512e-1 is nearest arm M  spread=4.90e-1  Z-margin=-2.91e-3 Y-margin=2.57e-2
+    f64 pieces: yy=3.463463099e-1 zz=-1.165536901e-1 x2=8.506842475e-9 y2=5.552752426e-2 z2=6.288386642e-3 k=5.316776547e-12
+prim  60 ell  P=[0.365, 1.606, 0.489, 1.000, 0.015, 0.000, 0.015, -0.999, -0.029, 0.000, 0.029, -1.000, 0.210, 0.300, 0.180]
+    ops 533  depth 63  worst 1.95e-5 at (0.37, 1.61, 0.49)
+    handwired -2.3750e-1  f32 -2.3749e-1  f64 -2.3748e-1  f64@f32coords -2.3749e-1
+    err: total 1.95e-5  |  port arithmetic 8.97e-6  |  input quantisation 1.05e-5  |  f32 reference 1.05e-5
+    taps: arg0=1.408493063e-6  k0=1.186799491e-3  arg1=2.491141822e-5  invK1=2.003552704e+2  rmin=1.800000072e-1
+    f64 ell: arg0=1.408049402e-6 k0=1.186612575e-3  arg1=2.490766689e-5 k1=4.990758148e-3 invK1=2.003703586e+2 main=-2.374798558e-1
+    port f64-relative error: arg0 3.15e-4  k0 1.58e-4  arg1 1.51e-4  invK1 -7.53e-5
+prim  61 ell  P=[0.370, 1.330, 0.400, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.150, 0.150, 0.150]
+    ops 497  depth 63  worst 1.25e-7 at (0.24, 1.54, 0.35)
+    handwired 1.0332e-1  f32 1.0332e-1  f64 1.0332e-1  f64@f32coords 1.0332e-1
+    err: total 1.25e-7  |  port arithmetic 9.18e-8  |  input quantisation 3.33e-8  |  f32 reference 3.58e-8
+    taps: arg0=2.851970911e+0  k0=1.688777804e+0  arg1=1.267542419e+2  invK1=8.882162720e-2  rmin=1.500000060e-1
+    f64 ell: arg0=2.851973157e+0 k0=1.688778599e+0  arg1=1.267543625e+2 k1=1.125852399e+1 invK1=8.882158981e-2 main=1.033167899e-1
+    port f64-relative error: arg0 -7.87e-7  k0 -4.71e-7  arg1 -9.51e-7  invK1 4.21e-7
+prim  62 cone P=[0.370, 1.300, 0.480, -0.010, -0.700, 0.040, 0.492, 0.035, 0.490, 2.034, 0.240, 0.205]
+    ops 629  depth 49  worst 8.44e-5 at (0.36, 0.67, 0.52)
+    handwired -2.0822e-1  f32 -2.0814e-1  f64 -2.0814e-1  f64@f32coords -2.0814e-1
+    err: total 8.44e-5  |  port arithmetic 8.44e-5  |  input quantisation 1.49e-8  |  f32 reference 1.03e-8
+    taps: aZArg=1.070904429e-3  aZRoot=3.272467479e-2  aZVal=-1.384458542e-1  aYArg=9.738269448e-2  aYRoot=3.120619953e-1  aYVal=3.946592808e-1  yy=4.450315237e-1  zz=-4.666846991e-2  x2=8.370674820e-9  y2=9.738268703e-2  z2=1.070896047e-3  k=1.025407710e-11  armZ=-1.384458542e-1  armY=3.946592808e-1  armM=-2.082204521e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.384e-1 Y=3.947e-1 M=-2.081e-1 picks M  port's -2.082e-1 is nearest arm M  spread=6.03e-1  Z-margin=-5.25e-4 Y-margin=4.78e-2
+    f64 pieces: yy=4.450316019e-1 zz=-4.666839806e-2 x2=8.372558803e-9 y2=9.738272241e-2 z2=1.070892792e-3 k=1.025638453e-11
+prim  63 ell  P=[0.367, 1.076, 0.493, 1.000, -0.014, 0.001, -0.014, -0.998, 0.057, 0.000, -0.057, -0.998, 0.190, 0.280, 0.150]
+    ops 533  depth 63  worst 1.15e-5 at (0.37, 1.08, 0.49)
+    handwired -1.7465e-1  f32 -1.7465e-1  f64 -1.7466e-1  f64@f32coords -1.7465e-1
+    err: total 1.15e-5  |  port arithmetic 4.86e-6  |  input quantisation 6.65e-6  |  f32 reference 6.65e-6
+    taps: arg0=1.942197514e-6  k0=1.393627375e-3  arg1=6.349699106e-5  invK1=1.254941254e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.942361250e-6 k0=1.393686209e-3  arg1=6.349398391e-5 k1=7.968311233e-3 invK1=1.254971061e+2 main=-1.746598253e-1
+    port f64-relative error: arg0 -8.43e-5  k0 -4.22e-5  arg1 4.74e-5  invK1 -2.38e-5
+prim  64 ell  P=[0.360, 0.600, 0.520, -1.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.200, 0.180, 0.190]
+    ops 521  depth 63  worst 4.78e-6 at (0.36, 0.60, 0.52)
+    handwired -1.9686e-1  f32 -1.9685e-1  f64 -1.9685e-1  f64@f32coords -1.9685e-1
+    err: total 4.78e-6  |  port arithmetic 2.03e-6  |  input quantisation 2.75e-6  |  f32 reference 2.77e-6
+    taps: arg0=1.025255187e-6  k0=1.012548804e-3  arg1=2.640321873e-5  invK1=1.946128693e+2  rmin=1.800000072e-1
+    f64 ell: arg0=1.025252563e-6 k0=1.012547561e-3  arg1=2.640443658e-5 k1=5.138524747e-3 invK1=1.946083845e+2 main=-1.968507223e-1
+    port f64-relative error: arg0 2.56e-6  k0 1.23e-6  arg1 -4.61e-5  invK1 2.30e-5
+prim  65 cone P=[0.360, 0.600, 0.520, 0.000, -0.380, 0.020, 0.145, -0.005, 0.145, 6.906, 0.195, 0.200]
+    ops 445  depth 47  worst 1.62e-4 at (0.36, 0.59, 0.52)
+    handwired -1.9506e-1  f32 -1.9490e-1  f64 -1.9490e-1  f64@f32coords -1.9490e-1
+    err: total 1.62e-4  |  port arithmetic 1.62e-4  |  input quantisation 2.44e-8  |  f32 reference 2.60e-8  <-- WRONG
+    taps: aZArg=2.919988474e-3  aZRoot=5.403691903e-2  aZVal=1.731831282e-1  aYArg=1.131338649e-6  aYRoot=1.063643955e-3  aYVal=-1.876543909e-1  yy=2.794158412e-3  zz=-1.420058459e-1  x2=8.385859784e-10  y2=1.130500095e-6  z2=2.919987543e-3  k=-2.096464820e-14  armZ=1.731831282e-1  armY=-1.876543909e-1  armM=-1.950589716e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=1.732e-1 Y=-1.877e-1 M=-1.949e-1 picks M  port's -1.951e-1 is nearest arm M  spread=3.68e-1  Z-margin=-4.23e-4 Y-margin=1.64e-7
+    f64 pieces: yy=2.794155161e-3 zz=-1.420058448e-1 x2=8.385570055e-10 y2=1.130497484e-6 z2=2.919987563e-3 k=-2.096392514e-14
+prim  66 ell  P=[0.360, 0.140, 0.580, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.250, 0.150, 0.300]
+    ops 521  depth 63  worst 9.89e-6 at (0.36, 0.14, 0.58)
+    handwired -2.7036e-1  f32 -2.7035e-1  f64 -2.7035e-1  f64@f32coords -2.7035e-1
+    err: total 9.89e-6  |  port arithmetic 3.27e-6  |  input quantisation 6.62e-6  |  f32 reference 6.64e-6
+    taps: arg0=1.153157882e-6  k0=1.073851832e-3  arg1=1.574286944e-5  invK1=2.520333862e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.153094109e-6 k0=1.073822196e-3  arg1=1.574314769e-5 k1=3.967763563e-3 invK1=2.520311466e+2 main=-2.703460237e-1
+    port f64-relative error: arg0 5.53e-5  k0 2.76e-5  arg1 -1.77e-5  invK1 8.89e-6
+prim  67 ell  P=[0.360, 0.050, 0.610, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.255, 0.060, 0.294]
+    ops 561  depth 63  worst 1.09e-5 at (0.36, 0.05, 0.61)
+    handwired -2.3144e-1  f32 -2.3143e-1  f64 -2.3143e-1  f64@f32coords -2.3143e-1
+    err: total 1.09e-5  |  port arithmetic 7.47e-6  |  input quantisation 3.38e-6  |  f32 reference 3.41e-6
+    taps: arg0=1.286327233e-6  k0=1.134163584e-3  arg1=2.395967022e-5  invK1=2.042958679e+2  rmin=5.999999866e-2
+    f64 ell: arg0=1.286295053e-6 k0=1.134149485e-3  arg1=2.396132055e-5 k1=4.895030189e-3 invK1=2.042888320e+2 main=-2.314312978e-1
+    port f64-relative error: arg0 2.50e-5  k0 1.24e-5  arg1 -6.89e-5  invK1 3.44e-5
+prim  68 ell  P=[0.209, 0.080, 0.763, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 1.75e-6 at (0.21, 0.08, 0.76)
+    handwired -5.9013e-2  f32 -5.9013e-2  f64 -5.9012e-2  f64@f32coords -5.9013e-2
+    err: total 1.75e-6  |  port arithmetic 1.76e-7  |  input quantisation 1.93e-6  |  f32 reference 1.92e-6
+    taps: arg0=1.087477699e-6  k0=1.042821910e-3  arg1=3.116120643e-4  invK1=5.664908218e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.086852790e-6 k0=1.042522321e-3  arg1=3.114517257e-4 k1=1.764799495e-2 invK1=5.666366082e+1 main=-5.901154614e-2
+    port f64-relative error: arg0 5.75e-4  k0 2.87e-4  arg1 5.15e-4  invK1 -2.57e-4
+prim  69 ell  P=[0.278, 0.080, 0.819, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.03e-6 at (0.28, 0.08, 0.82)
+    handwired -5.7637e-2  f32 -5.7638e-2  f64 -5.7640e-2  f64@f32coords -5.7638e-2
+    err: total 3.03e-6  |  port arithmetic 1.28e-6  |  input quantisation 1.75e-6  |  f32 reference 1.75e-6
+    taps: arg0=1.137734671e-6  k0=1.066646422e-3  arg1=3.417498374e-4  invK1=5.409359360e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.138439971e-6 k0=1.066977025e-3  arg1=3.419255221e-4 k1=1.849122825e-2 invK1=5.407969587e+1 main=-5.764022652e-2
+    port f64-relative error: arg0 -6.20e-4  k0 -3.10e-4  arg1 -5.14e-4  invK1 2.57e-4
+prim  70 ell  P=[0.360, 0.080, 0.838, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 2.83e-6 at (0.36, 0.08, 0.84)
+    handwired -5.6675e-2  f32 -5.6674e-2  f64 -5.6672e-2  f64@f32coords -5.6674e-2
+    err: total 2.83e-6  |  port arithmetic 6.21e-7  |  input quantisation 2.21e-6  |  f32 reference 2.22e-6
+    taps: arg0=1.181143261e-6  k0=1.086804084e-3  arg1=3.669290454e-4  invK1=5.220461655e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.180481583e-6 k0=1.086499693e-3  arg1=3.667605195e-4 k1=1.915099265e-2 invK1=5.221661447e+1 main=-5.667169486e-2
+    port f64-relative error: arg0 5.61e-4  k0 2.80e-4  arg1 4.59e-4  invK1 -2.30e-4
+prim  71 ell  P=[0.442, 0.080, 0.819, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 2.89e-6 at (0.44, 0.08, 0.82)
+    handwired -5.8819e-2  f32 -5.8820e-2  f64 -5.8822e-2  f64@f32coords -5.8820e-2
+    err: total 2.89e-6  |  port arithmetic 1.18e-6  |  input quantisation 1.70e-6  |  f32 reference 1.70e-6
+    taps: arg0=1.092347247e-6  k0=1.045154175e-3  arg1=3.150757984e-4  invK1=5.633683777e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.093495469e-6 k0=1.045703337e-3  arg1=3.153757171e-4 k1=1.775882083e-2 invK1=5.631004501e+1 main=-5.882202719e-2
+    port f64-relative error: arg0 -1.05e-3  k0 -5.25e-4  arg1 -9.51e-4  invK1 4.76e-4
+prim  72 ell  P=[0.511, 0.080, 0.763, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.04e-6 at (0.51, 0.08, 0.76)
+    handwired -5.7002e-2  f32 -5.7002e-2  f64 -5.7005e-2  f64@f32coords -5.7002e-2
+    err: total 3.04e-6  |  port arithmetic 9.33e-8  |  input quantisation 3.13e-6  |  f32 reference 3.13e-6
+    taps: arg0=1.164703690e-6  k0=1.079214388e-3  arg1=3.576847375e-4  invK1=5.287493515e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.165430468e-6 k0=1.079551049e-3  arg1=3.578694614e-4 k1=1.891743803e-2 invK1=5.286128062e+1 main=-5.700484481e-2
+    port f64-relative error: arg0 -6.24e-4  k0 -3.12e-4  arg1 -5.16e-4  invK1 2.58e-4
+prim  73 ell  P=[0.389, 1.862, -1.127, 1.000, 0.024, -0.001, 0.024, -0.998, 0.059, 0.000, -0.059, -0.998, 0.260, 0.540, 0.340]
+    ops 525  depth 63  worst 4.35e-5 at (0.39, 1.86, -1.13)
+    handwired -4.1474e-1  f32 -4.1476e-1  f64 -4.1479e-1  f64@f32coords -4.1476e-1
+    err: total 4.35e-5  |  port arithmetic 2.09e-5  |  input quantisation 2.25e-5  |  f32 reference 2.26e-5
+    taps: arg0=1.370077143e-6  k0=1.170502859e-3  arg1=7.946371625e-6  invK1=3.547444153e+2  rmin=2.599999905e-1
+    f64 ell: arg0=1.369759541e-6 k0=1.170367267e-3  arg1=7.942866483e-6 k1=2.818309153e-3 invK1=3.548226776e+2 main=-4.147868258e-1
+    port f64-relative error: arg0 2.32e-4  k0 1.16e-4  arg1 4.41e-4  invK1 -2.21e-4
+prim  74 cone P=[0.340, 2.200, -0.920, 0.060, -0.740, -0.140, 0.571, 0.050, 0.568, 1.752, 0.220, 0.170]
+    ops 633  depth 49  worst 7.27e-5 at (0.38, 1.74, -1.01)
+    handwired -1.8886e-1  f32 -1.8879e-1  f64 -1.8879e-1  f64@f32coords -1.8879e-1
+    err: total 7.27e-5  |  port arithmetic 7.27e-5  |  input quantisation 2.73e-8  |  f32 reference 3.28e-8
+    taps: aZArg=2.671699971e-2  aZRoot=1.634533554e-1  aZVal=1.163583547e-1  aYArg=7.171338052e-2  aYRoot=2.677935362e-1  aYVal=2.491547763e-1  yy=3.544525504e-1  zz=-2.163474560e-1  x2=8.497292647e-9  y2=7.171337306e-2  z2=2.671699040e-2  k=2.124323113e-11  armZ=1.163583547e-1  armY=2.491547763e-1  armM=-1.888627857e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=1.164e-1 Y=2.492e-1 M=-1.888e-1 picks M  port's -1.889e-1 is nearest arm M  spread=4.38e-1  Z-margin=-1.52e-2 Y-margin=4.08e-2
+    f64 pieces: yy=3.544525295e-1 zz=-2.163474705e-1 x2=8.496696083e-9 y2=7.171336879e-2 z2=2.671699495e-2 k=2.124174021e-11
+prim  75 cone P=[0.398, 1.342, -1.114, -0.028, -0.662, -0.156, 0.464, 0.030, 0.463, 2.155, 0.220, 0.190]
+    ops 636  depth 49  worst 8.94e-5 at (0.39, 1.09, -1.17)
+    handwired -2.0843e-1  f32 -2.0834e-1  f64 -2.0834e-1  f64@f32coords -2.0834e-1
+    err: total 8.94e-5  |  port arithmetic 8.94e-5  |  input quantisation 4.49e-8  |  f32 reference 3.76e-8
+    taps: aZArg=3.814848140e-2  aZRoot=1.953163594e-1  aZVal=2.309436202e-1  aYArg=1.457947772e-2  aYRoot=1.207455024e-1  aYVal=4.022935033e-2  yy=1.772611290e-1  zz=-2.867353559e-1  x2=8.366094484e-9  y2=1.457946934e-2  z2=3.814847395e-2  k=7.529484848e-12  armZ=2.309436202e-1  armY=4.022935033e-2  armM=-2.084315270e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=2.309e-1 Y=4.023e-2 M=-2.083e-1 picks M  port's -2.084e-1 is nearest arm M  spread=4.39e-1  Z-margin=-1.77e-2 Y-margin=6.75e-3
+    f64 pieces: yy=1.772611454e-1 zz=-2.867353346e-1 x2=8.369889209e-9 y2=1.457947174e-2 z2=3.814846918e-2 k=7.532900288e-12
+prim  76 ell  P=[0.390, 1.155, -1.218, 0.999, -0.039, -0.009, -0.041, -0.972, -0.230, 0.000, 0.230, -0.973, 0.180, 0.280, 0.150]
+    ops 541  depth 63  worst 4.33e-5 at (0.39, 1.15, -1.22)
+    handwired -2.0109e-1  f32 -2.0108e-1  f64 -2.0105e-1  f64@f32coords -2.0108e-1
+    err: total 4.33e-5  |  port arithmetic 1.16e-5  |  input quantisation 3.16e-5  |  f32 reference 3.16e-5
+    taps: arg0=1.372387601e-6  k0=1.171489479e-3  arg1=3.385833770e-5  invK1=1.718569794e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.372951987e-6 k0=1.171730339e-3  arg1=3.388683240e-5 k1=5.821239765e-3 invK1=1.717847126e+2 main=-2.010495074e-1
+    port f64-relative error: arg0 -4.11e-4  k0 -2.06e-4  arg1 -8.41e-4  invK1 4.21e-4
+prim  77 ell  P=[0.370, 0.760, -1.360, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.110, 0.110, 0.110]
+    ops 505  depth 63  worst 9.59e-8 at (0.37, 0.76, -1.36)
+    handwired -1.0989e-1  f32 -1.0989e-1  f64 -1.0989e-1  f64@f32coords -1.0989e-1
+    err: total 9.59e-8  |  port arithmetic 3.85e-8  |  input quantisation 5.73e-8  |  f32 reference 5.86e-8
+    taps: arg0=9.986620171e-7  k0=9.993307758e-4  arg1=8.253404667e-5  invK1=1.100736771e+2  rmin=1.099999994e-1
+    f64 ell: arg0=1.000000000e-6 k0=1.000000000e-3  arg1=8.264462810e-5 k1=9.090909091e-3 invK1=1.100000000e+2 main=-1.098900000e-1
+    port f64-relative error: arg0 -1.34e-3  k0 -6.69e-4  arg1 -1.34e-3  invK1 6.70e-4
+prim  78 ell  P=[0.370, 0.680, -1.270, -1.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.190, 0.190, 0.190]
+    ops 497  depth 63  worst 1.10e-7 at (0.10, 0.78, -1.02)
+    handwired 1.8772e-1  f32 1.8772e-1  f64 1.8772e-1  f64@f32coords 1.8772e-1
+    err: total 1.10e-7  |  port arithmetic 8.00e-8  |  input quantisation 2.96e-8  |  f32 reference 3.50e-8
+    taps: arg0=3.952134371e+0  k0=1.987997413e+0  arg1=1.094774017e+2  invK1=9.557355195e-2  rmin=1.899999976e-1
+    f64 ell: arg0=3.952135394e+0 k0=1.987997835e+0  arg1=1.094774347e+2 k1=1.046314650e+1 invK1=9.557354470e-2 main=1.877195887e-1
+    port f64-relative error: arg0 -2.59e-7  k0 -2.13e-7  arg1 -3.01e-7  invK1 7.58e-8
+prim  79 cone P=[0.370, 0.680, -1.270, -0.010, -0.460, 0.060, 0.215, -0.010, 0.215, 4.645, 0.190, 0.200]
+    ops 471  depth 47  worst 1.93e-4 at (0.37, 0.66, -1.27)
+    handwired -1.9019e-1  f32 -1.9000e-1  f64 -1.9000e-1  f64@f32coords -1.9000e-1
+    err: total 1.93e-4  |  port arithmetic 1.93e-4  |  input quantisation 1.62e-8  |  f32 reference 1.82e-8  <-- WRONG
+    taps: aZArg=9.129623882e-3  aZRoot=9.554906189e-2  aZVal=2.437949926e-1  aYArg=1.894102934e-5  aYRoot=4.352129065e-3  aYVal=-1.697857380e-1  yy=9.377299808e-3  zz=-2.059226930e-1  x2=8.893919379e-9  y2=1.893213630e-5  z2=9.129614569e-3  k=-8.893919130e-13  armZ=2.437949926e-1  armY=-1.697857380e-1  armM=-1.901901960e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=2.438e-1 Y=-1.698e-1 M=-1.900e-1 picks M  port's -1.902e-1 is nearest arm M  spread=4.34e-1  Z-margin=-1.96e-3 Y-margin=4.07e-6
+    f64 pieces: yy=9.377302482e-3 zz=-2.059226975e-1 x2=8.893401916e-9 y2=1.893214754e-5 z2=9.129615078e-3 k=-8.893401916e-13
+prim  80 ell  P=[0.360, 0.140, -1.170, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.250, 0.150, 0.290]
+    ops 533  depth 63  worst 1.75e-5 at (0.36, 0.14, -1.17)
+    handwired -2.1929e-1  f32 -2.1928e-1  f64 -2.1927e-1  f64@f32coords -2.1928e-1
+    err: total 1.75e-5  |  port arithmetic 1.04e-5  |  input quantisation 7.07e-6  |  f32 reference 7.07e-6
+    taps: arg0=1.256082896e-6  k0=1.120751025e-3  arg1=2.606252383e-5  invK1=1.958807526e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.255482387e-6 k0=1.120483104e-3  arg1=2.605424039e-5 k1=5.104335450e-3 invK1=1.959118890e+2 main=-2.192699976e-1
+    port f64-relative error: arg0 4.78e-4  k0 2.39e-4  arg1 3.18e-4  invK1 -1.59e-4
+prim  81 ell  P=[0.360, 0.050, -1.140, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.255, 0.060, 0.284]
+    ops 561  depth 63  worst 2.31e-5 at (0.36, 0.05, -1.14)
+    handwired -1.7421e-1  f32 -1.7422e-1  f64 -1.7419e-1  f64@f32coords -1.7422e-1
+    err: total 2.31e-5  |  port arithmetic 3.77e-7  |  input quantisation 2.35e-5  |  f32 reference 2.35e-5
+    taps: arg0=1.080836569e-6  k0=1.039632945e-3  arg1=3.553743591e-5  invK1=1.677478485e+2  rmin=5.999999866e-2
+    f64 ell: arg0=1.080699978e-6 k0=1.039567207e-3  arg1=3.554235932e-5 k1=5.961741299e-3 invK1=1.677362284e+2 main=-1.741918099e-1
+    port f64-relative error: arg0 1.26e-4  k0 6.32e-5  arg1 -1.39e-4  invK1 6.93e-5
+prim  82 ell  P=[0.209, 0.080, -0.993, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.84e-6 at (0.21, 0.08, -0.99)
+    handwired -5.8665e-2  f32 -5.8663e-2  f64 -5.8661e-2  f64@f32coords -5.8663e-2
+    err: total 3.84e-6  |  port arithmetic 1.86e-6  |  input quantisation 1.98e-6  |  f32 reference 1.98e-6
+    taps: arg0=1.100574650e-6  k0=1.049082726e-3  arg1=3.191151773e-4  invK1=5.597914124e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.099244121e-6 k0=1.048448435e-3  arg1=3.187715850e-4 k1=1.785417556e-2 invK1=5.600930698e+1 main=-5.866130236e-2
+    port f64-relative error: arg0 1.21e-3  k0 6.05e-4  arg1 1.08e-3  invK1 -5.39e-4
+prim  83 ell  P=[0.305, 0.080, -0.929, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.42e-6 at (0.30, 0.08, -0.93)
+    handwired -5.6860e-2  f32 -5.6861e-2  f64 -5.6863e-2  f64@f32coords -5.6861e-2
+    err: total 3.42e-6  |  port arithmetic 1.62e-6  |  input quantisation 1.80e-6  |  f32 reference 1.80e-6
+    taps: arg0=1.170853011e-6  k0=1.082059578e-3  arg1=3.613722802e-4  invK1=5.260446167e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.171760045e-6 k0=1.082478658e-3  arg1=3.616084958e-4 k1=1.901600631e-2 invK1=5.258727747e+1 main=-5.686298588e-2
+    port f64-relative error: arg0 -7.74e-4  k0 -3.87e-4  arg1 -6.53e-4  invK1 3.27e-4
+prim  84 ell  P=[0.415, 0.080, -0.929, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.47e-6 at (0.42, 0.08, -0.93)
+    handwired -5.8943e-2  f32 -5.8942e-2  f64 -5.8940e-2  f64@f32coords -5.8942e-2
+    err: total 3.47e-6  |  port arithmetic 1.71e-6  |  input quantisation 1.77e-6  |  f32 reference 1.76e-6
+    taps: arg0=1.090588512e-6  k0=1.044312492e-3  arg1=3.132434213e-4  invK1=5.650137711e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.089343400e-6 k0=1.043716149e-3  arg1=3.129229895e-4 k1=1.768962943e-2 invK1=5.653029668e+1 main=-5.894000265e-2
+    port f64-relative error: arg0 1.14e-3  k0 5.71e-4  arg1 1.02e-3  invK1 -5.12e-4
+prim  85 ell  P=[0.511, 0.080, -0.993, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.75e-6 at (0.51, 0.08, -0.99)
+    handwired -5.7177e-2  f32 -5.7174e-2  f64 -5.7173e-2  f64@f32coords -5.7174e-2
+    err: total 3.75e-6  |  port arithmetic 2.02e-6  |  input quantisation 1.73e-6  |  f32 reference 1.74e-6
+    taps: arg0=1.158862915e-6  k0=1.076504937e-3  arg1=3.537213488e-4  invK1=5.317033005e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.158085881e-6 k0=1.076143987e-3  arg1=3.535308363e-4 k1=1.880241570e-2 invK1=5.318465540e+1 main=-5.717275473e-2
+    port f64-relative error: arg0 6.71e-4  k0 3.35e-4  arg1 5.39e-4  invK1 -2.69e-4
+prim  86 ell  P=[-0.283, 2.563, 0.456, -0.991, 0.130, -0.010, -0.131, -0.989, 0.075, 0.000, 0.075, 0.997, 0.260, 0.460, 0.240]
+    ops 529  depth 63  worst 4.34e-5 at (-0.28, 2.56, 0.46)
+    handwired -3.4544e-1  f32 -3.4542e-1  f64 -3.4540e-1  f64@f32coords -3.4542e-1
+    err: total 4.34e-5  |  port arithmetic 1.46e-5  |  input quantisation 2.88e-5  |  f32 reference 2.88e-5
+    taps: arg0=1.325756330e-6  k0=1.151414937e-3  arg1=1.108458127e-5  invK1=3.003587646e+2  rmin=2.399999946e-1
+    f64 ell: arg0=1.325318695e-6 k0=1.151224867e-3  arg1=1.108371486e-5 k1=3.329221359e-3 invK1=3.003705348e+2 main=-3.453959424e-1
+    port f64-relative error: arg0 3.30e-4  k0 1.65e-4  arg1 7.82e-5  invK1 -3.92e-5
+prim  87 ell  P=[-0.360, 1.980, 0.500, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.240, 0.240, 0.240]
+    ops 493  depth 63  worst 1.61e-7 at (-0.69, 2.29, 0.47)
+    handwired 2.1566e-1  f32 2.1566e-1  f64 2.1566e-1  f64@f32coords 2.1566e-1
+    err: total 1.61e-7  |  port arithmetic 1.30e-7  |  input quantisation 3.13e-8  |  f32 reference 4.16e-8
+    taps: arg0=3.604664326e+0  k0=1.898595214e+0  arg1=6.258097458e+1  invK1=1.264092326e-1  rmin=2.399999946e-1
+    f64 ell: arg0=3.604665632e+0 k0=1.898595700e+0  arg1=6.258100056e+1 k1=7.910815417e+0 invK1=1.264092192e-1 main=2.156629680e-1
+    port f64-relative error: arg0 -3.62e-7  k0 -2.56e-7  arg1 -4.15e-7  invK1 1.06e-7
+prim  88 cone P=[-0.360, 1.980, 0.500, -0.010, -0.680, -0.020, 0.463, 0.025, 0.462, 2.160, 0.270, 0.245]
+    ops 636  depth 49  worst 8.96e-5 at (-0.37, 1.62, 0.49)
+    handwired -2.5650e-1  f32 -2.5641e-1  f64 -2.5641e-1  f64@f32coords -2.5641e-1
+    err: total 8.96e-5  |  port arithmetic 8.96e-5  |  input quantisation 9.46e-9  |  f32 reference 3.02e-8
+    taps: aZArg=2.137389034e-2  aZRoot=1.461981237e-1  aZVal=7.083091140e-2  aYArg=2.847456560e-2  aYRoot=1.687440872e-1  aYVal=9.453681111e-2  yy=2.480189651e-1  zz=-2.148810476e-1  x2=8.441513266e-9  y2=2.847455628e-2  z2=2.137388103e-2  k=5.275945479e-12  armZ=7.083091140e-2  armY=9.453681111e-2  armM=-2.564964294e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=7.083e-2 Y=9.454e-2 M=-2.564e-1 picks M  port's -2.565e-1 is nearest arm M  spread=3.51e-1  Z-margin=-9.88e-3 Y-margin=1.32e-2
+    f64 pieces: yy=2.480189313e-1 zz=-2.148810687e-1 x2=8.443513722e-9 y2=2.847454836e-2 z2=2.137388613e-2 k=5.277196076e-12
+prim  89 ell  P=[-0.365, 1.606, 0.489, -1.000, 0.015, 0.000, -0.015, -0.999, -0.029, 0.000, -0.029, 1.000, 0.210, 0.300, 0.180]
+    ops 533  depth 63  worst 2.00e-5 at (-0.37, 1.61, 0.49)
+    handwired -2.4376e-1  f32 -2.4376e-1  f64 -2.4378e-1  f64@f32coords -2.4376e-1
+    err: total 2.00e-5  |  port arithmetic 8.23e-6  |  input quantisation 1.18e-5  |  f32 reference 1.18e-5
+    taps: arg0=1.249966317e-6  k0=1.118018874e-3  arg1=2.099030280e-5  invK1=2.182682953e+2  rmin=1.800000072e-1
+    f64 ell: arg0=1.250663601e-6 k0=1.118330721e-3  arg1=2.099855104e-5 k1=4.582417597e-3 invK1=2.182254190e+2 main=-2.437752635e-1
+    port f64-relative error: arg0 -5.58e-4  k0 -2.79e-4  arg1 -3.93e-4  invK1 1.96e-4
+prim  90 ell  P=[-0.370, 1.330, 0.400, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.150, 0.150, 0.150]
+    ops 497  depth 63  worst 1.27e-7 at (-0.47, 1.50, 0.38)
+    handwired 4.1692e-2  f32 4.1692e-2  f64 4.1692e-2  f64@f32coords 4.1692e-2
+    err: total 1.27e-7  |  port arithmetic 8.12e-8  |  input quantisation 4.59e-8  |  f32 reference 7.12e-8
+    taps: arg0=1.633146167e+0  k0=1.277945995e+0  arg1=7.258425903e+1  invK1=1.173758432e-1  rmin=1.500000060e-1
+    f64 ell: arg0=1.633148070e+0 k0=1.277946818e+0  arg1=7.258435865e+1 k1=8.519645453e+0 invK1=1.173757764e-1 main=4.169202270e-2
+    port f64-relative error: arg0 -1.17e-6  k0 -6.44e-7  arg1 -1.37e-6  invK1 5.69e-7
+prim  91 cone P=[-0.370, 1.300, 0.480, 0.010, -0.700, 0.040, 0.492, 0.035, 0.490, 2.034, 0.240, 0.205]
+    ops 626  depth 49  worst 8.44e-5 at (-0.36, 0.93, 0.50)
+    handwired -2.2151e-1  f32 -2.2143e-1  f64 -2.2143e-1  f64@f32coords -2.2143e-1
+    err: total 8.44e-5  |  port arithmetic 8.44e-5  |  input quantisation 1.37e-8  |  f32 reference 1.15e-8
+    taps: aZArg=2.677698620e-2  aZRoot=1.636367440e-1  aZVal=1.277979165e-1  aYArg=3.281526268e-2  aYRoot=1.811498255e-1  aYVal=1.284153312e-1  yy=2.583377063e-1  zz=-2.333622873e-1  x2=8.303286059e-9  y2=3.281525522e-2  z2=2.677697875e-2  k=1.017152595e-11  armZ=1.277979165e-1  armY=1.284153312e-1  armM=-2.215103805e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=1.278e-1 Y=1.284e-1 M=-2.214e-1 picks M  port's -2.215e-1 is nearest arm M  spread=3.50e-1  Z-margin=-1.31e-2 Y-margin=1.61e-2
+    f64 pieces: yy=2.583377377e-1 zz=-2.333622623e-1 x2=8.305875058e-9 y2=3.281526474e-2 z2=2.677697179e-2 k=1.017469695e-11
+prim  92 ell  P=[-0.367, 1.076, 0.493, -1.000, -0.014, 0.001, 0.014, -0.998, 0.057, 0.000, 0.057, 0.998, 0.190, 0.280, 0.150]
+    ops 533  depth 63  worst 1.65e-5 at (-0.37, 1.08, 0.49)
+    handwired -2.1630e-1  f32 -2.1630e-1  f64 -2.1628e-1  f64@f32coords -2.1630e-1
+    err: total 1.65e-5  |  port arithmetic 6.31e-6  |  input quantisation 1.02e-5  |  f32 reference 1.02e-5
+    taps: arg0=1.300376653e-6  k0=1.140340581e-3  arg1=2.773063534e-5  invK1=1.898978729e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.300152478e-6 k0=1.140242289e-3  arg1=2.773008422e-5 k1=5.265936215e-3 invK1=1.898997556e+2 main=-2.162848333e-1
+    port f64-relative error: arg0 1.72e-4  k0 8.62e-5  arg1 1.99e-5  invK1 -9.91e-6
+prim  93 ell  P=[-0.360, 0.600, 0.520, -1.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.200, 0.180, 0.190]
+    ops 521  depth 63  worst 4.31e-6 at (-0.36, 0.60, 0.52)
+    handwired -1.8860e-1  f32 -1.8861e-1  f64 -1.8861e-1  f64@f32coords -1.8861e-1
+    err: total 4.31e-6  |  port arithmetic 2.18e-6  |  input quantisation 2.13e-6  |  f32 reference 2.14e-6
+    taps: arg0=1.112042128e-6  k0=1.054534107e-3  arg1=3.119662142e-5  invK1=1.790384216e+2  rmin=1.800000072e-1
+    f64 ell: arg0=1.112187865e-6 k0=1.054603179e-3  arg1=3.119927297e-5 k1=5.585630938e-3 invK1=1.790308044e+2 main=-1.886073396e-1
+    port f64-relative error: arg0 -1.31e-4  k0 -6.55e-5  arg1 -8.50e-5  invK1 4.25e-5
+prim  94 cone P=[-0.360, 0.600, 0.520, 0.000, -0.380, 0.020, 0.145, -0.005, 0.145, 6.906, 0.195, 0.200]
+    ops 445  depth 47  worst 1.62e-4 at (-0.36, 0.57, 0.52)
+    handwired -1.9535e-1  f32 -1.9519e-1  f64 -1.9519e-1  f64@f32coords -1.9519e-1
+    err: total 1.62e-4  |  port arithmetic 1.62e-4  |  input quantisation 8.36e-9  |  f32 reference 3.59e-9  <-- WRONG
+    taps: aZArg=2.578361426e-3  aZRoot=5.077756569e-2  aZVal=1.506737918e-1  aYArg=1.868572508e-5  aYRoot=4.322698805e-3  aYVal=-1.651470959e-1  yy=1.135954540e-2  zz=-1.334404647e-1  x2=8.383863048e-10  y2=1.868488653e-5  z2=2.578360494e-3  k=-2.095965749e-14  armZ=1.506737918e-1  armY=-1.651470959e-1  armM=-1.953547448e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=1.507e-1 Y=-1.651e-1 M=-1.952e-1 picks M  port's -1.954e-1 is nearest arm M  spread=3.46e-1  Z-margin=-3.73e-4 Y-margin=2.71e-6
+    f64 pieces: yy=1.135954605e-2 zz=-1.334404540e-1 x2=8.386224008e-10 y2=1.868488867e-5 z2=2.578360168e-3 k=-2.096556002e-14
+prim  95 ell  P=[-0.360, 0.140, 0.580, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.250, 0.150, 0.300]
+    ops 521  depth 63  worst 1.21e-5 at (-0.36, 0.14, 0.58)
+    handwired -2.1852e-1  f32 -2.1852e-1  f64 -2.1853e-1  f64@f32coords -2.1852e-1
+    err: total 1.21e-5  |  port arithmetic 5.00e-6  |  input quantisation 7.12e-6  |  f32 reference 7.11e-6
+    taps: arg0=1.391632395e-6  k0=1.179674640e-3  arg1=2.907527232e-5  invK1=1.854548035e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.391786813e-6 k0=1.179740146e-3  arg1=2.907527542e-5 k1=5.392149425e-3 invK1=1.854548013e+2 main=-2.185303608e-1
+    port f64-relative error: arg0 -1.11e-4  k0 -5.55e-5  arg1 -1.07e-7  invK1 1.19e-8
+prim  96 ell  P=[-0.360, 0.050, 0.610, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.255, 0.060, 0.294]
+    ops 561  depth 63  worst 1.31e-5 at (-0.36, 0.05, 0.61)
+    handwired -1.6719e-1  f32 -1.6719e-1  f64 -1.6718e-1  f64@f32coords -1.6719e-1
+    err: total 1.31e-5  |  port arithmetic 2.24e-6  |  input quantisation 1.08e-5  |  f32 reference 1.08e-5
+    taps: arg0=1.121283049e-6  k0=1.058906433e-3  arg1=4.002865171e-5  invK1=1.580572968e+2  rmin=5.999999866e-2
+    f64 ell: arg0=1.121053228e-6 k0=1.058798011e-3  arg1=4.002671387e-5 k1=6.326666885e-3 invK1=1.580611115e+2 main=-1.671775955e-1
+    port f64-relative error: arg0 2.05e-4  k0 1.02e-4  arg1 4.84e-5  invK1 -2.41e-5
+prim  97 ell  P=[-0.511, 0.080, 0.763, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.04e-6 at (-0.51, 0.08, 0.76)
+    handwired -5.6873e-2  f32 -5.6873e-2  f64 -5.6870e-2  f64@f32coords -5.6873e-2
+    err: total 3.04e-6  |  port arithmetic 2.70e-7  |  input quantisation 2.77e-6  |  f32 reference 2.77e-6
+    taps: arg0=1.172005227e-6  k0=1.082591945e-3  arg1=3.615521709e-4  invK1=5.259137344e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.171430115e-6 k0=1.082326252e-3  arg1=3.614135982e-4 k1=1.901088105e-2 invK1=5.260145479e+1 main=-5.687031647e-2
+    port f64-relative error: arg0 4.91e-4  k0 2.45e-4  arg1 3.83e-4  invK1 -1.92e-4
+prim  98 ell  P=[-0.442, 0.080, 0.819, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 2.13e-6 at (-0.44, 0.08, 0.82)
+    handwired -5.7149e-2  f32 -5.7148e-2  f64 -5.7147e-2  f64@f32coords -5.7148e-2
+    err: total 2.13e-6  |  port arithmetic 9.64e-7  |  input quantisation 1.16e-6  |  f32 reference 1.16e-6
+    taps: arg0=1.160033776e-6  k0=1.077048597e-3  arg1=3.544211504e-4  invK1=5.311781693e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.159214301e-6 k0=1.076668148e-3  arg1=3.541974213e-4 k1=1.882013340e-2 invK1=5.313458617e+1 main=-5.714672212e-2
+    port f64-relative error: arg0 7.07e-4  k0 3.53e-4  arg1 6.32e-4  invK1 -3.16e-4
+prim  99 ell  P=[-0.360, 0.080, 0.838, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 2.48e-6 at (-0.36, 0.08, 0.84)
+    handwired -5.7585e-2  f32 -5.7586e-2  f64 -5.7588e-2  f64@f32coords -5.7586e-2
+    err: total 2.48e-6  |  port arithmetic 1.20e-6  |  input quantisation 1.28e-6  |  f32 reference 1.28e-6
+    taps: arg0=1.140003974e-6  k0=1.067709643e-3  arg1=3.430505458e-4  invK1=5.399094772e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.140595303e-6 k0=1.067986565e-3  arg1=3.431987287e-4 k1=1.852562357e-2 invK1=5.397928961e+1 main=-5.758758757e-2
+    port f64-relative error: arg0 -5.18e-4  k0 -2.59e-4  arg1 -4.32e-4  invK1 2.16e-4
+prim 100 ell  P=[-0.278, 0.080, 0.819, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.15e-6 at (-0.28, 0.08, 0.82)
+    handwired -5.9212e-2  f32 -5.9211e-2  f64 -5.9209e-2  f64@f32coords -5.9211e-2
+    err: total 3.15e-6  |  port arithmetic 1.13e-6  |  input quantisation 2.02e-6  |  f32 reference 2.02e-6
+    taps: arg0=1.081152959e-6  k0=1.039785100e-3  arg1=3.077219590e-4  invK1=5.700602722e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.080075614e-6 k0=1.039266864e-3  arg1=3.074482844e-4 k1=1.753420327e-2 invK1=5.703139085e+1 main=-5.920923650e-2
+    port f64-relative error: arg0 9.97e-4  k0 4.99e-4  arg1 8.90e-4  invK1 -4.45e-4
+prim 101 ell  P=[-0.209, 0.080, 0.763, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 1.91e-6 at (-0.21, 0.08, 0.76)
+    handwired -5.8641e-2  f32 -5.8641e-2  f64 -5.8643e-2  f64@f32coords -5.8641e-2
+    err: total 1.91e-6  |  port arithmetic 1.97e-7  |  input quantisation 2.10e-6  |  f32 reference 2.10e-6
+    taps: arg0=1.099257133e-6  k0=1.048454666e-3  arg1=3.189942217e-4  invK1=5.598975754e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.099902470e-6 k0=1.048762352e-3  arg1=3.191604877e-4 k1=1.786506333e-2 invK1=5.597517242e+1 main=-5.864308622e-2
+    port f64-relative error: arg0 -5.87e-4  k0 -2.93e-4  arg1 -5.21e-4  invK1 2.61e-4
+prim 102 ell  P=[-0.389, 1.862, -1.127, -1.000, 0.024, -0.001, -0.024, -0.998, 0.059, 0.000, 0.059, 0.998, 0.260, 0.540, 0.340]
+    ops 525  depth 63  worst 4.96e-5 at (-0.39, 1.86, -1.13)
+    handwired -4.8796e-1  f32 -4.8793e-1  f64 -4.8791e-1  f64@f32coords -4.8793e-1
+    err: total 4.96e-5  |  port arithmetic 3.32e-5  |  input quantisation 1.64e-5  |  f32 reference 1.64e-5
+    taps: arg0=1.096453616e-6  k0=1.047116821e-3  arg1=4.595286100e-6  invK1=4.664914856e+2  rmin=2.599999905e-1
+    f64 ell: arg0=1.096584463e-6 k0=1.047179289e-3  arg1=4.596769314e-6 k1=2.144007769e-3 invK1=4.664162203e+2 main=-4.879099411e-1
+    port f64-relative error: arg0 -1.19e-4  k0 -5.97e-5  arg1 -3.23e-4  invK1 1.61e-4
+prim 103 cone P=[-0.340, 2.200, -0.920, -0.060, -0.740, -0.140, 0.571, 0.050, 0.568, 1.752, 0.220, 0.170]
+    ops 636  depth 49  worst 7.27e-5 at (-0.40, 1.51, -1.05)
+    handwired -1.7328e-1  f32 -1.7321e-1  f64 -1.7321e-1  f64@f32coords -1.7321e-1
+    err: total 7.27e-5  |  port arithmetic 7.27e-5  |  input quantisation 9.32e-10  |  f32 reference 2.87e-9
+    taps: aZArg=8.456923533e-4  aZRoot=2.908078767e-2  aZVal=-1.190525815e-1  aYArg=1.617376953e-1  aYRoot=4.021662474e-1  aYVal=4.845659435e-1  yy=5.323087573e-1  zz=-3.849124908e-2  x2=8.607823787e-9  y2=1.617376804e-1  z2=8.456837386e-4  k=2.151955870e-11  armZ=-1.190525815e-1  armY=4.845659435e-1  armM=-1.732821763e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-1.191e-1 Y=4.846e-1 M=-1.732e-1 picks M  port's -1.733e-1 is nearest arm M  spread=6.58e-1  Z-margin=-4.81e-4 Y-margin=9.19e-2
+    f64 pieces: yy=5.323087239e-1 zz=-3.849127610e-2 x2=8.608940011e-9 y2=1.617376513e-1 z2=8.456849140e-4 k=2.152235003e-11
+prim 104 cone P=[-0.398, 1.342, -1.114, 0.028, -0.662, -0.156, 0.464, 0.030, 0.463, 2.155, 0.220, 0.190]
+    ops 633  depth 49  worst 8.95e-5 at (-0.38, 0.92, -1.21)
+    handwired -2.0066e-1  f32 -2.0057e-1  f64 -2.0057e-1  f64@f32coords -2.0057e-1
+    err: total 8.95e-5  |  port arithmetic 8.94e-5  |  input quantisation 5.60e-8  |  f32 reference 5.99e-8
+    taps: aZArg=1.287960354e-2  aZRoot=1.134883389e-1  aZVal=5.458879471e-2  aYArg=4.103602841e-2  aYRoot=2.025735229e-1  aYVal=2.165841758e-1  yy=2.973892689e-1  zz=-1.666072011e-1  x2=8.587193179e-9  y2=4.103602096e-2  z2=1.287959516e-2  k=7.728474111e-12  armZ=5.458879471e-2  armY=2.165841758e-1  armM=-2.006619722e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=5.459e-2 Y=2.166e-1 M=-2.006e-1 picks M  port's -2.007e-1 is nearest arm M  spread=4.17e-1  Z-margin=-5.96e-3 Y-margin=1.90e-2
+    f64 pieces: yy=2.973893150e-1 zz=-1.666071650e-1 x2=8.591942246e-9 y2=4.103603645e-2 z2=1.287958991e-2 k=7.732748021e-12
+prim 105 ell  P=[-0.390, 1.155, -1.218, -0.999, -0.039, -0.009, 0.041, -0.972, -0.230, 0.000, -0.230, 0.973, 0.180, 0.280, 0.150]
+    ops 541  depth 63  worst 7.23e-5 at (-0.39, 1.16, -1.22)
+    handwired -2.1832e-1  f32 -2.1834e-1  f64 -2.1840e-1  f64@f32coords -2.1834e-1
+    err: total 7.23e-5  |  port arithmetic 1.67e-5  |  input quantisation 5.55e-5  |  f32 reference 5.55e-5
+    taps: arg0=1.231572469e-6  k0=1.109762350e-3  arg1=2.578075146e-5  invK1=1.969483032e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.231259259e-6 k0=1.109621223e-3  arg1=2.575713800e-5 k1=5.075149062e-3 invK1=1.970385476e+2 main=-2.183955487e-1
+    port f64-relative error: arg0 2.54e-4  k0 1.27e-4  arg1 9.17e-4  invK1 -4.58e-4
+prim 106 ell  P=[-0.370, 0.760, -1.360, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.110, 0.110, 0.110]
+    ops 505  depth 63  worst 8.35e-8 at (-0.25, 0.64, -1.49)
+    handwired 1.0054e-1  f32 1.0054e-1  f64 1.0054e-1  f64@f32coords 1.0054e-1
+    err: total 8.35e-8  |  port arithmetic 3.62e-8  |  input quantisation 4.73e-8  |  f32 reference 5.37e-8
+    taps: arg0=3.663483143e+0  k0=1.914022684e+0  arg1=3.027672119e+2  invK1=5.747057870e-2  rmin=1.099999994e-1
+    f64 ell: arg0=3.663485410e+0 k0=1.914023357e+0  arg1=3.027673893e+2 k1=1.740021233e+1 invK1=5.747056305e-2 main=1.005425692e-1
+    port f64-relative error: arg0 -6.19e-7  k0 -3.51e-7  arg1 -5.86e-7  invK1 2.72e-7
+prim 107 ell  P=[-0.370, 0.680, -1.270, -1.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.190, 0.190, 0.190]
+    ops 497  depth 63  worst 1.05e-7 at (-0.23, 0.70, -1.03)
+    handwired 8.9562e-2  f32 8.9562e-2  f64 8.9562e-2  f64@f32coords 8.9562e-2
+    err: total 1.05e-7  |  port arithmetic 5.57e-8  |  input quantisation 4.97e-8  |  f32 reference 6.07e-8
+    taps: arg0=2.164958954e+0  k0=1.471379876e+0  arg1=5.997116852e+1  invK1=1.291304827e-1  rmin=1.899999976e-1
+    f64 ell: arg0=2.164960275e+0 k0=1.471380398e+0  arg1=5.997119875e+1 k1=7.744107356e+0 invK1=1.291304412e-1 main=8.956227556e-2
+    port f64-relative error: arg0 -6.10e-7  k0 -3.54e-7  arg1 -5.04e-7  invK1 3.21e-7
+prim 108 cone P=[-0.370, 0.680, -1.270, 0.010, -0.460, 0.060, 0.215, -0.010, 0.215, 4.645, 0.190, 0.200]
+    ops 470  depth 47  worst 1.45e-4 at (-0.36, 0.37, -1.23)
+    handwired -1.9663e-1  f32 -1.9649e-1  f64 -1.9649e-1  f64@f32coords -1.9649e-1
+    err: total 1.45e-4  |  port arithmetic 1.45e-4  |  input quantisation 8.21e-9  |  f32 reference 3.67e-9  <-- WRONG
+    taps: aZArg=1.096488442e-3  aZRoot=3.311326727e-2  aZVal=-4.619941115e-2  aYArg=4.460489843e-3  aYRoot=6.678689271e-2  aYVal=1.202038825e-1  yy=1.439359188e-1  zz=-7.136407495e-2  x2=1.853571963e-9  y2=4.460487980e-3  z2=1.096486580e-3  k=-1.853571956e-13  armZ=-4.619941115e-2  armY=1.202038825e-1  armM=-1.966302395e-1  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-4.620e-2 Y=1.202e-1 M=-1.965e-1 picks M  port's -1.966e-1 is nearest arm M  spread=3.17e-1  Z-margin=-2.36e-4 Y-margin=9.60e-4
+    f64 pieces: yy=1.439359168e-1 zz=-7.136408321e-2 x2=1.853758635e-9 y2=4.460488115e-3 z2=1.096486810e-3 k=-1.853758635e-13
+prim 109 ell  P=[-0.360, 0.140, -1.170, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.250, 0.150, 0.290]
+    ops 533  depth 63  worst 1.76e-5 at (-0.36, 0.14, -1.17)
+    handwired -2.6231e-1  f32 -2.6231e-1  f64 -2.6233e-1  f64@f32coords -2.6231e-1
+    err: total 1.76e-5  |  port arithmetic 5.41e-6  |  input quantisation 1.22e-5  |  f32 reference 1.22e-5
+    taps: arg0=1.070473445e-6  k0=1.034636865e-3  arg1=1.552578760e-5  invK1=2.537892151e+2  rmin=1.500000060e-1
+    f64 ell: arg0=1.071099576e-6 k0=1.034939407e-3  arg1=1.553277197e-5 k1=3.941163784e-3 invK1=2.537321601e+2 main=-2.623256388e-1
+    port f64-relative error: arg0 -5.85e-4  k0 -2.92e-4  arg1 -4.50e-4  invK1 2.25e-4
+prim 110 ell  P=[-0.360, 0.050, -1.140, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.255, 0.060, 0.284]
+    ops 561  depth 63  worst 1.20e-5 at (-0.36, 0.05, -1.14)
+    handwired -1.4650e-1  f32 -1.4649e-1  f64 -1.4649e-1  f64@f32coords -1.4649e-1
+    err: total 1.20e-5  |  port arithmetic 3.61e-6  |  input quantisation 8.37e-6  |  f32 reference 8.35e-6
+    taps: arg0=1.229687769e-6  k0=1.108912867e-3  arg1=5.717001113e-5  invK1=1.322561646e+2  rmin=5.999999866e-2
+    f64 ell: arg0=1.229254254e-6 k0=1.108717391e-3  arg1=5.715920322e-5 k1=7.560370574e-3 invK1=1.322686488e+2 main=-1.464859594e-1
+    port f64-relative error: arg0 3.53e-4  k0 1.76e-4  arg1 1.89e-4  invK1 -9.44e-5
+prim 111 ell  P=[-0.511, 0.080, -0.993, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 4.04e-6 at (-0.51, 0.08, -0.99)
+    handwired -5.7283e-2  f32 -5.7280e-2  f64 -5.7279e-2  f64@f32coords -5.7280e-2
+    err: total 4.04e-6  |  port arithmetic 2.30e-6  |  input quantisation 1.74e-6  |  f32 reference 1.74e-6
+    taps: arg0=1.154470738e-6  k0=1.074463013e-3  arg1=3.510776442e-4  invK1=5.337014771e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.153536334e-6 k0=1.074028088e-3  arg1=3.508433086e-4 k1=1.873081174e-2 invK1=5.338796918e+1 main=-5.727859349e-2
+    port f64-relative error: arg0 8.10e-4  k0 4.05e-4  arg1 6.68e-4  invK1 -3.34e-4
+prim 112 ell  P=[-0.415, 0.080, -0.929, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.12e-6 at (-0.42, 0.08, -0.93)
+    handwired -5.6485e-2  f32 -5.6484e-2  f64 -5.6482e-2  f64@f32coords -5.6484e-2
+    err: total 3.12e-6  |  port arithmetic 1.47e-6  |  input quantisation 1.65e-6  |  f32 reference 1.65e-6
+    taps: arg0=1.190089620e-6  k0=1.090912265e-3  arg1=3.721893299e-4  invK1=5.183439636e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.189350075e-6 k0=1.090573278e-3  arg1=3.719993517e-4 k1=1.928728472e-2 invK1=5.184762991e+1 main=-5.648197472e-2
+    port f64-relative error: arg0 6.22e-4  k0 3.11e-4  arg1 5.11e-4  invK1 -2.55e-4
+prim 113 ell  P=[-0.305, 0.080, -0.929, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 3.24e-6 at (-0.30, 0.08, -0.93)
+    handwired -5.8478e-2  f32 -5.8480e-2  f64 -5.8482e-2  f64@f32coords -5.8480e-2
+    err: total 3.24e-6  |  port arithmetic 1.31e-6  |  input quantisation 1.93e-6  |  f32 reference 1.92e-6
+    taps: arg0=1.104712169e-6  k0=1.051052823e-3  arg1=3.223621752e-4  invK1=5.569651031e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.105797649e-6 k0=1.051569137e-3  arg1=3.226429126e-4 k1=1.796226357e-2 invK1=5.567227070e+1 main=-5.848167937e-2
+    port f64-relative error: arg0 -9.82e-4  k0 -4.91e-4  arg1 -8.70e-4  invK1 4.35e-4
+prim 114 ell  P=[-0.209, 0.080, -0.993, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.062, 0.055, 0.062]
+    ops 533  depth 63  worst 2.93e-6 at (-0.21, 0.08, -0.99)
+    handwired -5.7164e-2  f32 -5.7161e-2  f64 -5.7161e-2  f64@f32coords -5.7161e-2
+    err: total 2.93e-6  |  port arithmetic 2.14e-6  |  input quantisation 7.87e-7  |  f32 reference 7.77e-7
+    taps: arg0=1.159343469e-6  k0=1.076728106e-3  arg1=3.540272592e-4  invK1=5.314735031e+1  rmin=5.499999970e-2
+    f64 ell: arg0=1.158607816e-6 k0=1.076386462e-3  arg1=3.538391560e-4 k1=1.881061286e-2 invK1=5.316147898e+1 main=-5.716070299e-2
+    port f64-relative error: arg0 6.35e-4  k0 3.17e-4  arg1 5.32e-4  invK1 -2.66e-4
+prim 115 cone P=[0.000, 2.820, -1.660, 0.000, -0.053, -0.119, 0.017, 0.005, 0.017, 59.172, 0.085, 0.080]
+    ops 398  depth 47  worst 2.45e-3 at (-0.01, 2.78, -1.75)
+    handwired -7.8498e-2  f32 -7.6044e-2  f64 -7.6044e-2  f64@f32coords -7.6044e-2
+    err: total 2.45e-3  |  port arithmetic 2.45e-3  |  input quantisation 7.64e-9  |  f32 reference 6.65e-9  <-- WRONG
+    taps: aZArg=3.431071320e-7  aZRoot=5.857528886e-4  aZVal=-4.566506669e-2  aYArg=2.628910806e-6  aYRoot=1.621391624e-3  aYVal=1.094032824e-2  yy=1.245161705e-2  zz=-4.448382184e-3  x2=8.688217257e-9  y2=2.620222631e-6  z2=3.344189281e-7  k=1.898864231e-13  armZ=-4.566506669e-2  armY=1.094032824e-2  armM=-7.849794626e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-4.566e-2 Y=1.094e-2 M=-7.604e-2 picks M  port's -7.850e-2 is nearest arm M  spread=8.70e-2  Z-margin=-5.64e-9 Y-margin=4.42e-8
+    f64 pieces: yy=1.245160742e-2 zz=-4.448392575e-3 x2=8.688162189e-9 y2=2.620218714e-6 z2=3.344205209e-7 k=1.898852147e-13
+prim 116 cone P=[0.000, 2.767, -1.779, 0.000, -0.092, -0.077, 0.014, 0.005, 0.014, 69.444, 0.080, 0.076]
+    ops 398  depth 47  worst 2.88e-3 at (-0.01, 2.71, -1.83)
+    handwired -7.3728e-2  f32 -7.0848e-2  f64 -7.0848e-2  f64@f32coords -7.0848e-2
+    err: total 2.88e-3  |  port arithmetic 2.88e-3  |  input quantisation 9.67e-13  |  f32 reference 2.35e-9  <-- WRONG
+    taps: aZArg=3.985995249e-7  aZRoot=6.313473568e-4  aZVal=-3.180643544e-2  aYArg=1.226731797e-6  aYRoot=1.107579214e-3  aYVal=-3.409780562e-3  yy=9.196846746e-3  zz=-5.203153007e-3  x2=8.751188219e-9  y2=1.217980639e-6  z2=3.898483385e-7  k=1.912626958e-13  armZ=-3.180643544e-2  armY=-3.409780562e-3  armM=-7.372786850e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-3.181e-2 Y=-3.410e-3 M=-7.085e-2 picks M  port's -7.373e-2 is nearest arm M  spread=6.74e-2  Z-margin=-5.61e-9 Y-margin=1.75e-8
+    f64 pieces: yy=9.196855574e-3 zz=-5.203144426e-3 x2=8.751204752e-9 y2=1.217982995e-6 z2=3.898470516e-7 k=1.912630494e-13
+prim 117 cone P=[0.000, 2.675, -1.856, 0.000, -0.103, -0.038, 0.012, 0.005, 0.012, 82.645, 0.076, 0.071]
+    ops 386  depth 47  worst 3.43e-3 at (-0.01, 2.61, -1.89)
+    handwired -6.8477e-2  f32 -6.5049e-2  f64 -6.5049e-2  f64@f32coords -6.5049e-2
+    err: total 3.43e-3  |  port arithmetic 3.43e-3  |  input quantisation 5.89e-8  |  f32 reference 5.57e-8  <-- WRONG
+    taps: aZArg=2.241646939e-7  aZRoot=4.734167887e-4  aZVal=-3.184964135e-2  aYArg=7.591530107e-7  aYRoot=8.712938870e-4  aYVal=-3.642238677e-3  yy=7.877021097e-3  zz=-4.222978838e-3  x2=8.378739480e-9  y2=7.507742907e-7  z2=2.157859598e-7  k=1.831225872e-13  armZ=-3.184964135e-2  armY=-3.642238677e-3  armM=-6.847691536e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-3.185e-2 Y=-3.642e-3 M=-6.505e-2 picks M  port's -6.848e-2 is nearest arm M  spread=6.14e-2  Z-margin=-2.61e-9 Y-margin=9.07e-9
+    f64 pieces: yy=7.877023387e-3 zz=-4.222976613e-3 x2=8.378786689e-9 y2=7.507747190e-7 z2=2.157857308e-7 k=1.831236198e-13
+prim 118 cone P=[0.000, 2.572, -1.894, 0.000, -0.099, -0.010, 0.010, 0.005, 0.010, 100.000, 0.071, 0.066]
+    ops 386  depth 47  worst 4.09e-3 at (-0.01, 2.50, -1.91)
+    handwired -6.3839e-2  f32 -5.9751e-2  f64 -5.9751e-2  f64@f32coords -5.9751e-2
+    err: total 4.09e-3  |  port arithmetic 4.09e-3  |  input quantisation 9.31e-9  |  f32 reference 8.85e-9  <-- WRONG
+    taps: aZArg=9.094092945e-8  aZRoot=2.975263633e-4  aZVal=-3.654736280e-2  aYArg=5.089763135e-7  aYRoot=7.134257467e-4  aYVal=3.675743937e-4  yy=7.090176921e-3  zz=-2.909822855e-3  x2=6.270237662e-9  y2=5.027060865e-7  z2=8.467068824e-8  k=1.370399698e-13  armZ=-3.654736280e-2  armY=3.675743937e-4  armM=-6.383881718e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-3.614e-2 Y=3.676e-4 M=-5.975e-2 picks M  port's -6.384e-2 is nearest arm M  spread=6.01e-2  Z-margin=-8.45e-10 Y-margin=5.02e-9
+    f64 pieces: yy=7.090178880e-3 zz=-2.909821120e-3 x2=6.270222288e-9 y2=5.027063655e-7 z2=8.467058951e-8 k=1.370396270e-13
+prim 119 cone P=[0.000, 2.472, -1.904, 0.000, -0.095, 0.000, 0.009, 0.005, 0.009, 110.803, 0.066, 0.062]
+    ops 369  depth 47  worst 4.55e-3 at (-0.01, 2.43, -1.90)
+    handwired -5.9723e-2  f32 -5.5174e-2  f64 -5.5174e-2  f64@f32coords -5.5174e-2
+    err: total 4.55e-3  |  port arithmetic 4.55e-3  |  input quantisation 1.04e-8  |  f32 reference 9.70e-9  <-- WRONG
+    taps: aZArg=2.200385296e-7  aZRoot=4.690322676e-4  aZVal=-9.654667228e-3  aYArg=1.628690427e-7  aYRoot=4.032067372e-4  aYVal=-2.162335068e-2  yy=4.161554389e-3  zz=-4.863445647e-3  x2=6.569263800e-9  y2=1.562997767e-7  z2=2.134692636e-7  k=1.435753643e-13  armZ=-9.654667228e-3  armY=-2.162335068e-2  armM=-5.972291902e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-9.649e-3 Y=-2.158e-2 M=-5.517e-2 picks M  port's -5.972e-2 is nearest arm M  spread=4.55e-2  Z-margin=-1.92e-9 Y-margin=1.41e-9
+    f64 pieces: yy=4.161555066e-3 zz=-4.863444934e-3 x2=6.569245917e-9 y2=1.562998286e-7 z2=2.134691971e-7 k=1.435749753e-13
+prim 120 cone P=[0.000, 2.377, -1.904, 0.000, -0.090, 0.003, 0.008, 0.005, 0.008, 123.457, 0.062, 0.057]
+    ops 371  depth 47  worst 5.11e-3 at (-0.01, 2.30, -1.89)
+    handwired -5.1880e-2  f32 -4.6765e-2  f64 -4.6765e-2  f64@f32coords -4.6765e-2
+    err: total 5.11e-3  |  port arithmetic 5.11e-3  |  input quantisation 3.27e-8  |  f32 reference 3.40e-8  <-- WRONG
+    taps: aZArg=1.789902981e-8  aZRoot=9.726910503e-5  aZVal=-4.494147003e-2  aYArg=4.022312794e-7  aYRoot=6.342169945e-4  aYVal=1.667338982e-2  yy=6.978915073e-3  zz=-1.121085137e-3  x2=7.718691464e-9  y2=3.945125968e-7  z2=1.018033835e-8  k=1.686968301e-13  armZ=-4.494147003e-2  armY=1.667338982e-2  armM=-5.187955126e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-4.043e-2 Y=1.667e-2 M=-4.677e-2 picks M  port's -5.188e-2 is nearest arm M  spread=6.34e-2  Z-margin=-8.24e-11 Y-margin=3.19e-9
+    f64 pieces: yy=6.978905922e-3 zz=-1.121094078e-3 x2=7.718745175e-9 y2=3.945115358e-7 z2=1.018050064e-8 k=1.686980000e-13
+prim 121 cone P=[0.000, 2.287, -1.901, 0.000, -0.085, 0.004, 0.007, 0.005, 0.007, 138.408, 0.057, 0.052]
+    ops 359  depth 47  worst 5.71e-3 at (0.01, 2.22, -1.89)
+    handwired -4.5051e-2  f32 -3.9343e-2  f64 -3.9343e-2  f64@f32coords -3.9343e-2
+    err: total 5.71e-3  |  port arithmetic 5.71e-3  |  input quantisation 9.81e-9  |  f32 reference 1.08e-8  <-- WRONG
+    taps: aZArg=2.513543151e-8  aZRoot=1.277991250e-4  aZVal=-3.458653763e-2  aYArg=2.515185713e-7  aYRoot=5.014997441e-4  aYVal=1.246173307e-2  yy=5.780894775e-3  zz=-1.444105059e-3  x2=1.006813033e-8  y2=2.414504365e-7  z2=1.506730030e-8  k=2.200452819e-13  armZ=-3.458653763e-2  armY=1.246173307e-2  armM=-4.505085573e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-3.033e-2 Y=1.246e-2 M=-3.934e-2 picks M  port's -4.505e-2 is nearest arm M  spread=5.18e-2  Z-margin=-1.09e-10 Y-margin=1.74e-9
+    f64 pieces: yy=5.780895537e-3 zz=-1.444104463e-3 x2=1.006810012e-8 y2=2.414504920e-7 z2=1.506728737e-8 k=2.200446207e-13
+prim 122 cone P=[0.000, 2.203, -1.896, 0.000, -0.080, 0.004, 0.006, 0.005, 0.006, 156.250, 0.052, 0.048]
+    ops 359  depth 47  worst 6.48e-3 at (-0.01, 2.14, -1.90)
+    handwired -4.1314e-2  f32 -3.4839e-2  f64 -3.4839e-2  f64@f32coords -3.4839e-2
+    err: total 6.48e-3  |  port arithmetic 6.48e-3  |  input quantisation 1.56e-8  |  f32 reference 1.34e-8  <-- WRONG
+    taps: aZArg=2.088751572e-8  aZRoot=1.103722752e-4  aZVal=-3.035433218e-2  aYArg=1.660283573e-7  aYRoot=4.071393050e-4  aYVal=1.134051755e-2  yy=4.971738905e-3  zz=-1.428260934e-3  x2=7.831968851e-9  y2=1.581963858e-7  z2=1.305554687e-8  k=1.711725786e-13  armZ=-3.035433218e-2  armY=1.134051755e-2  armM=-4.131439328e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-2.502e-2 Y=1.139e-2 M=-3.484e-2 picks M  port's -4.131e-2 is nearest arm M  spread=4.62e-2  Z-margin=-8.34e-11 Y-margin=1.01e-9
+    f64 pieces: yy=4.971743222e-3 zz=-1.428256778e-3 x2=7.831994875e-9 y2=1.581966762e-7 z2=1.305547152e-8 k=1.711731430e-13
+prim 123 cone P=[0.000, 2.123, -1.892, 0.000, -0.075, 0.004, 0.006, 0.005, 0.006, 177.778, 0.048, 0.043]
+    ops 347  depth 47  worst 7.37e-3 at (0.00, 2.14, -1.90)
+    handwired -3.8583e-2  f32 -3.1208e-2  f64 -3.1208e-2  f64@f32coords -3.1208e-2
+    err: total 7.37e-3  |  port arithmetic 7.37e-3  |  input quantisation 7.72e-9  |  f32 reference 8.51e-9  <-- WRONG
+    taps: aZArg=2.626596540e-7  aZRoot=5.124922027e-4  aZVal=4.818472266e-2  aYArg=8.501588766e-9  aYRoot=5.072099884e-5  aYVal=-3.858293593e-2  yy=-1.203824650e-3  zz=-6.828824989e-3  x2=3.498743240e-10  y2=8.151714859e-9  z2=2.623097828e-7  k=7.646722068e-15  armZ=4.818472266e-2  armY=-3.858293593e-2  armM=-4.819695652e-2  testZ=0.000000000e+0  testY=1.000000000e+0
+    f64 arms: Z=4.819e-2 Y=-3.121e-2 M=-4.528e-2 picks Y  port's -3.858e-2 is nearest arm M  spread=9.35e-2  Z-margin=-1.47e-9 Y-margin=-4.57e-11
+    f64 pieces: yy=-1.203834050e-3 zz=-6.828834050e-3 x2=3.498809970e-10 y2=8.151842368e-9 z2=2.623104815e-7 k=7.646867865e-15
+prim 124 cone P=[0.000, 2.048, -1.888, 0.000, -0.070, 0.004, 0.005, 0.005, 0.005, 204.082, 0.043, 0.038]
+    ops 347  depth 47  worst 8.47e-3 at (0.02, 2.02, -1.89)
+    handwired -3.1124e-2  f32 -2.2658e-2  f64 -2.2658e-2  f64@f32coords -2.2658e-2
+    err: total 8.47e-3  |  port arithmetic 8.47e-3  |  input quantisation 4.20e-10  |  f32 reference 1.45e-9  <-- WRONG
+    taps: aZArg=5.771422096e-8  aZRoot=2.284762013e-4  aZVal=8.377797902e-3  aYArg=2.296458490e-8  aYRoot=1.190606417e-4  aYVal=-1.862690970e-2  yy=1.726350863e-3  zz=-3.173649311e-3  x2=8.361176640e-9  y2=1.460340737e-8  z2=4.935304432e-8  k=1.827387390e-13  armZ=8.377797902e-3  armY=-1.862690970e-2  armM=-3.112435713e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=1.078e-2 Y=-1.200e-2 M=-2.266e-2 picks M  port's -3.112e-2 is nearest arm M  spread=3.34e-2  Z-margin=-2.41e-10 Y-margin=7.11e-11
+    f64 pieces: yy=1.726340426e-3 zz=-3.173659574e-3 x2=8.361192497e-9 y2=1.460323121e-8 z2=4.935336394e-8 k=1.827390878e-13
+prim 125 cone P=[0.000, 2.013, -1.886, 0.000, -0.195, 0.010, 0.038, -0.020, 0.038, 26.298, 0.055, 0.075]
+    ops 421  depth 47  worst 1.09e-3 at (-0.00, 1.87, -1.88)
+    handwired -6.8697e-2  f32 -6.7607e-2  f64 -6.7607e-2  f64@f32coords -6.7607e-2
+    err: total 1.09e-3  |  port arithmetic 1.09e-3  |  input quantisation 2.01e-8  |  f32 reference 2.08e-8  <-- WRONG
+    taps: aZArg=3.478604413e-6  aZRoot=1.865101862e-3  aZVal=-2.595064417e-2  aYArg=3.083259435e-5  aYRoot=5.552710500e-3  aYVal=9.102789313e-2  yy=2.847165242e-2  zz=-9.553346783e-3  x2=8.198458801e-9  y2=3.082439434e-5  z2=3.470406000e-6  k=-3.279383492e-12  armZ=-2.595064417e-2  armY=9.102789313e-2  armM=-6.869727373e-2  testZ=0.000000000e+0  testY=0.000000000e+0
+    f64 arms: Z=-2.595e-2 Y=9.103e-2 M=-6.761e-2 picks M  port's -6.870e-2 is nearest arm M  spread=1.59e-1  Z-margin=-1.31e-7 Y-margin=1.16e-6
+    f64 pieces: yy=2.847167785e-2 zz=-9.553322150e-3 x2=8.198179550e-9 y2=3.082445061e-5 z2=3.470388285e-6 k=-3.279271820e-12
+prim 126 cone P=[0.000, 1.818, -1.876, 0.000, -0.112, 0.006, 0.013, 0.050, 0.010, 79.719, 0.070, 0.020]
+    ops 371  depth 47  worst 3.28e-3 at (0.00, 1.82, -1.88)
+    handwired -6.6741e-2  f32 -6.3462e-2  f64 -6.3462e-2  f64@f32coords -6.3462e-2
+    err: total 3.28e-3  |  port arithmetic 3.28e-3  |  input quantisation 3.69e-8  |  f32 reference 3.43e-8  <-- WRONG
+    taps: aZArg=2.013649691e-6  aZRoot=1.419031294e-3  aZVal=9.312431514e-2  aYArg=6.725823454e-9  aYRoot=4.087857451e-5  aYVal=-6.674118340e-2  yy=-1.051828949e-4  zz=-1.264918223e-2  x2=6.587043799e-9  y2=1.387798071e-10  z2=2.007062676e-6  k=1.646760853e-11  armZ=9.312431514e-2  armY=-6.674118340e-2  armM=-6.782409549e-2  testZ=0.000000000e+0  testY=1.000000000e+0
+    f64 arms: Z=9.312e-2 Y=-6.346e-2 M=-6.463e-2 picks Y  port's -6.674e-2 is nearest arm M  spread=1.58e-1  Z-margin=-2.02e-8 Y-margin=-1.79e-11
+    f64 pieces: yy=-1.051823252e-4 zz=-1.264918233e-2 x2=6.587178217e-9 y2=1.387783053e-10 z2=2.007062748e-6 k=1.646794554e-11
