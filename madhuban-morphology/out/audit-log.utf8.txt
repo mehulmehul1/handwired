@@ -1,0 +1,94 @@
+
+=== 1. does it stand, and is its scale an animal scale? ===
+animal    plan      prims vol m3   mass kg   real kg  x     h m    CoM%h  margin   limb m2  load kPa fore%  verdict
+elephant  quadruped 127      5.9393      5939     5000   1.19  3.59    60   0.600   0.71213     81.8   62stands        ok
+cow       quadruped 195      0.8105       810      650   1.25  1.51    68   0.204   0.07883    100.9   47stands        ok
+horse     quadruped 218      0.7021       702      500   1.40  2.28    56   0.172   0.07333     93.9   50stands        ok
+lion      quadruped 204      0.3066       307      190   1.61  1.22    63   0.121   0.07219     41.7   70stands        ok
+bear      quadruped 140      0.2803       280      250   1.12  0.94    65   0.219   0.10500     26.2   49stands        ok
+sheep     quadruped 846      0.2126       213       70   3.04  0.93    57   0.069   0.03306     63.1   49stands        ok
+pig       quadruped 439      0.2006       201      150   1.34  0.83    62   0.109   0.05108     38.5   44stands        ok
+deer      quadruped 237      0.1258       126       90   1.40  1.48    48   0.077   0.01782     69.2   49stands        ok
+boar      quadruped 205      0.1158       116       90   1.29  0.79    60   0.088   0.02461     46.2   66stands        ok
+goat      quadruped 198      0.0788        79       65   1.21  1.02    59   0.079   0.01483     52.1   62stands        ok
+cheetah   quadruped 128      0.0660        66       50   1.32  0.85    66   0.089   0.02129     30.4   54stands        ok
+wolf      quadruped 207      0.0624        62       38   1.64  0.90    62   0.086   0.02113     29.0   60stands        ok
+dog       quadruped 164      0.0351        35       30   1.17  0.78    56   0.067   0.01487     23.2   67stands        ok
+shark     swimmer   527      0.0345        34      150   0.23  0.45ΓÇö     ΓÇö          0.01634     20.7ΓÇö    n/a (no stance)~161%
+eagle     bird      93       0.0136        14        5   2.71  0.62    57   0.037   0.00515     25.8   75stands        ok
+fox       quadruped 162      0.0113        11        6   1.88  0.54    56   0.037   0.00642     17.3   57stands        ~26%
+rabbit    quadruped 96       0.0043     4.323        2   1.96  0.34    39   0.048   0.00457      9.3   36stands        ~25%
+chicken   bird      203      0.0039     3.927        3   1.57  0.29    56   0.014   0.00263     14.7   70stands        ok
+cat       quadruped 148      0.0036     3.581        4   0.90  0.30    56   0.035   0.00362      9.7   68stands        ~31%
+crow      bird      81       0.0023     2.349    0.500   4.70  0.33    55  -0.030   0.00179     12.9  152FALLS         ~34%
+snake     snake     88       0.0008     0.810        1   0.81ΓÇö     ΓÇö     ΓÇö          0.00000ΓÇö        ΓÇö    n/a (no stance)~160%
+rat       quadruped 154      0.0004     0.435    0.350   1.24  0.10    53   0.021   0.00130      3.3   23stands        ~54%
+frog      quadruped 118      0.0003     0.309    0.030  10.29  0.07    51   0.002   0.00142      2.1   93stands        ~76%
+fish      swimmer   82       0.0001     0.050        2   0.03  0.10ΓÇö     ΓÇö          0.00011      4.4ΓÇö    n/a (no stance)~147%
+spider    spider    205      0.0000     0.006    0.001   5.97  0.01ΓÇö     ΓÇö          0.00000ΓÇö        ΓÇö    n/a (no stance)~251%
+  grid column: ok = the volume integral is within 25% by its own (pessimistic) error bound; ~NN% =
+  the bound is that share of the volume, so treat those rows as approximate. A stance verdict survives
+  either way; a load or fore% on a ~ row does not.
+
+  of the 21 that stand on feet: stands 20 / falls 1 / no contact found 0
+  the other 4 (snake, spider, fish, shark) have no stance to test
+  mass within 2x of a real adult: 18 / 25
+  voxel step each number was taken at (m): boar 0.0126 ┬╖ bear 0.0152 ┬╖ cat 0.0100 ┬╖ cheetah 0.0167 ┬╖ cow 0.0244 ┬╖ deer 0.0172 ┬╖ dog 0.0122 ┬╖ fox 0.0100 ┬╖ frog 0.0100 ┬╖ goat 0.0118 ┬╖ horse 0.0259 ┬╖ rabbit 0.0100 ┬╖ lion 0.0221 ┬╖ pig 0.0203 ┬╖ rat 0.0100 ┬╖ wolf 0.0134 ┬╖ sheep 0.0129 ┬╖ chicken 0.0100 ┬╖ crow 0.0100 ┬╖ eagle 0.0100 ┬╖ fish 0.0100 ┬╖ shark 0.0745 ┬╖ snake 0.0327 ┬╖ spider 0.0100 ┬╖ elephant 0.0403
+  grid error bound as a share of volume (worst case): boar 10% ┬╖ cat 31% ┬╖ cheetah 24% ┬╖ cow 11% ┬╖ deer 17% ┬╖ dog 21% ┬╖ fox 26% ┬╖ frog 76% ┬╖ goat 13% ┬╖ horse 15% ┬╖ rabbit 25% ┬╖ lion 16% ┬╖ pig 13% ┬╖ rat 54% ┬╖ wolf 19% ┬╖ chicken 21% ┬╖ crow 34% ┬╖ eagle 23% ┬╖ fish 147% ┬╖ shark 161% ┬╖ snake 160% ┬╖ spider 251% ┬╖ elephant 12%
+  That bound assumes every surface voxel is wrong by half a cell, and it is pessimistic by an
+  order of magnitude: `bun run madhuban-morphology/converge.ts` re-measures these bodies at half
+  the step and every one but the rat agrees to within 2.5%. So the ~ rows are approximate, not junk.
+
+=== 2. where the weight sits, vs force-plate figures (firm refs only) ===
+  cat       measured   68% fore   real   60%   diff +8.3 pts   DISAGREES
+  cow       measured   47% fore   real   55%   diff -7.9 pts   DISAGREES
+  dog       measured   67% fore   real   60%   diff +6.8 pts   DISAGREES
+  horse     measured   50% fore   real   57%   diff -6.7 pts   DISAGREES
+  rabbit    measured   36% fore   real   40%   diff -3.8 pts   agrees
+  lion      measured   70% fore   real   60%   diff +10.3 pts   DISAGREES
+  sheep     measured   49% fore   real   55%   diff -6.3 pts   DISAGREES
+  1 of 7 within 5 points
+
+=== 3. allometry across the cast ===
+  log(limb area) on log(mass):   slope 0.749   r2 0.891   n=13
+  log(limb load) on log(mass):   slope 0.251   r2 0.477
+  constant bone stress predicts area ~ mass^0.67 and load ~ mass^0.33.
+  the cast measures area ~ mass^0.75 at r2 0.89.
+  That lands close to the law, and the honest reading is narrow: it means the cast is *consistent with*
+  limbs sized by load. It does not mean they were. A body drawn with a single elephant-sized lever and
+  then uniformly shrunk produces the same exponent, and so does an artist eyeballing "big animal, stout
+  legs". One fit cannot separate those, and the elephant alone may be carrying it ΓÇö drop it and re-fit
+  before anyone calls this a law.
+  dropped the elephant (which was authored, not inherited): area ~ mass^0.65 at r2 0.76 over 12
+  so the inherited bodies alone carry an exponent of 0.65, and the elephant pulls the fit 0.10 up.
+
+=== 4. is it 24 animals or one parameterised animal? ===
+  CoM height / body height   mean   0.600   spread   8.6%   range 0.478 .. 0.684
+  belly line / body height   mean   0.423   spread  12.0%   range 0.326 .. 0.500
+  limb section / h^2         mean   0.040   spread  70.4%   range 0.008 .. 0.118
+  footprint / h^2            mean   0.029   spread 107.9%   range 0.004 .. 0.120
+
+  CoM height sits at 60% of body height across 13 species, spread 9%.
+  limb section varies 70% around its mean ΓÇö that is real differentiation, not a template.
+  So the cast is a low-dimensional *skeleton family* (the PCA found 4 components at 96.7% of a
+  115-number vector) with independently authored sculpts on top. The skeleton is generic; the
+  surface is not. Both statements are true and they are about different layers.
+
+=== 5. the birds ΓÇö is a wing in the data, or an arm folded against the body? ===
+bird      sculpt x  sculpt z  shoulder..hand joint x max reading
+chicken        0.268     0.266          0.078       0.157arm folded along the body
+crow           0.304     0.353          0.139       0.266arm folded along the body
+eagle          0.846     0.531          0.381       0.624arm folded along the body
+  Two different things are being measured there, and the difference is the finding.
+  The sculpt extent is the body including a folded arm; the joint reach is how far the wing arm
+  actually gets. Neither is a wingspan, because the eagle sculpt.js says it plainly: "contour
+  feathers are part of the body shape; flight feathers are cards, see core/build/featherCards.js".
+  So the prim list is a body, not a wing. Span and wing area live in a separate card layer plus a
+  posed rig, and no number in this audit can stand in for them. Phase 2 starts there.
+
+=== 6. the one body that was authored from anatomy, not inherited ===
+  mass 5939 kg against a real 4000-6300 kg bull  ->  x1.19
+  limb load 81.8 kPa on 0.712 m2  (real elephant foot pressure is ~100-200 kPa)
+  stability margin 0.600 m, 62% fore ΓÇö real elephants carry ~60% fore
+
+  wrote out/audit.json
